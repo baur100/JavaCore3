@@ -4,12 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
 
-public class LoginPage {
-    private WebDriver driver;
+import java.time.Duration;
+
+public class LoginPage extends BasePage{
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public MainPage loginToApp(String email, String password){
@@ -30,6 +32,7 @@ public class LoginPage {
         return true;
     }
     public WebElement getEmail() {
+        fluentWait.until(x->x.findElement(By.xpath("//*[@type='email']")));
         return driver.findElement(By.xpath("//*[@type='email']"));
     }
 

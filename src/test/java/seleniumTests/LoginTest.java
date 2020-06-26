@@ -29,11 +29,9 @@ public class LoginTest {
 
     @Test
     public void loginTest_CorrectCredentials_LoggedToApp(){
-
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp("testpro.user03@testpro.io","te$t$tudent");
         Assert.assertTrue(mainPage.isMain());
-
     }
     @Test
     public void loginTest_WrongCredentials_Error(){
