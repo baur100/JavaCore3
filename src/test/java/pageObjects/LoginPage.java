@@ -1,12 +1,10 @@
 package pageObjects;
 
+import hwPageObject.MainPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.FluentWait;
-
-import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
