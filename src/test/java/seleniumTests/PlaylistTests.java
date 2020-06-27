@@ -32,4 +32,13 @@ public class PlaylistTests {
         String playlistId = mainPage.createPlaylist("xxxxx");
         Assert.assertTrue(mainPage.checkPlaylist(playlistId));
     }
+    @Test
+    public void playlistTests_renamePlaylist_PlaylistRenamed(){
+        LoginPage loginPage = new LoginPage(driver);
+        MainPage mainPage = loginPage.loginToApp("testpro.user03@testpro.io","te$t$tudent");
+        String playlistId = mainPage.createPlaylist("xxxxx");
+        mainPage.renamePlaylist(playlistId,"newName");
+        Assert.assertTrue(mainPage.checkPlaylist(playlistId,"newName"));
+
+    }
 }

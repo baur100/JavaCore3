@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class MainPage extends BasePage {
     public MainPage(WebDriver driver) {
@@ -33,5 +34,24 @@ public class MainPage extends BasePage {
     public boolean checkPlaylist(String id){
         var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
         return list.size()==1;
+    }
+    public boolean checkPlaylist(String id, String name){
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
+        if(list.size()==0){
+            return false;
+        };
+        return name.equals(list.get(0).getText());
+    }
+
+    public void renamePlaylist(String playlistId, String newName) {
+        var playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
+        Actions actions = new Actions(driver);
+        actions.doubleClick(playlist).perform();
+        var editField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));
+        editField.sendKeys(Keys.CONTROL+"a");
+        editField.sendKeys(newName);
+        editField.sendKeys(Keys.RETURN);
+
+
     }
 }
