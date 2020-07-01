@@ -9,11 +9,15 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserFabric {
     public static WebDriver getDriver(Browsers browser) throws NoSuchFieldException {
-        return switch (browser) {
-            case FIREFOX -> getFirefoxDriver();
-            case CHROME -> getChromeDriver();
-            default -> throw new NoSuchFieldException("No such Browser");
-        };
+        switch (browser) {
+            case FIREFOX:
+                return getFirefoxDriver();
+            case CHROME:
+                return getChromeDriver();
+            default:
+                throw new NoSuchFieldException("No such browser");
+
+        }
     }
 
     private static WebDriver getChromeDriver() {
@@ -27,8 +31,9 @@ public class BrowserFabric {
 
     private static WebDriver getFirefoxDriver() {
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("window-size=1400,1000");
         options.addArguments("--headless");
+        options.addArguments("--width=1400");
+        options.addArguments("--height=1000");
         System.setProperty("webdriver.gecko.driver", "geckodriver");
         return new FirefoxDriver();
     }

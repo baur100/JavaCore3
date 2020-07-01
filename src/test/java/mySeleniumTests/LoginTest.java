@@ -19,11 +19,11 @@ public class LoginTest extends BaseTest{
         Assert.assertTrue(mainPageMy.isMain());
     }
 
-    @Test(enabled = false)
-    public void loginTest_WrongCredentials_Error(){
-        LoginPageMy loginPage = new LoginPageMy(driver);
-        loginPage.loginToApp("testpro.user03@testpro.io","12345");
-        Assert.assertTrue(loginPage.isError());
-    }
+//    @Test(enabled = false)
+//    public void loginTest_WrongCredentials_Error(){
+//        LoginPageMy loginPage = new LoginPageMy(driver);
+//        loginPage.loginToApp("testpro.user03@testpro.io","12345");
+//        Assert.assertTrue(loginPage.isError());
+//    }
 
 }

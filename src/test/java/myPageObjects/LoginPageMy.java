@@ -21,6 +21,8 @@ public class LoginPageMy extends BasePageMy {
     }
 
     public boolean isError(){
+//        var errors = driver.findElements(By.xpath("//*[@class='error']"));
+//        return errors.size()==1;
         try {
             driver.findElement(By.xpath("//*[@class='error']"));
         } catch (NoSuchElementException error){
@@ -29,8 +31,8 @@ public class LoginPageMy extends BasePageMy {
         return true;
     }
     public WebElement getEmail() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@type='email']")));
-//        fluentWait.until(x->x.findElement(By.xpath("//*[@type='email']")));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@type='email']")));
+        fluentWait.until(x->x.findElement(By.xpath("//*[@type='email']")));
         return driver.findElement(By.xpath("//*[@type='email']"));
     }
 
