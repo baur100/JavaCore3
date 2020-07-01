@@ -3,7 +3,7 @@ package seleniumTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PlaylistTests extends BaseTest{
+public class PlaylistTestsNew extends BaseTest{
 
     @Test
     public void playlistTests_createPlaylist_PlaylistCreated(){
