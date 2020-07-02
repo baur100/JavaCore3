@@ -19,7 +19,7 @@ public class BaseTest {
     public void startUp()
         throws NoSuchFieldException {
 
-        driver= BrowserFabric.getDriver(Browsers.OPERA);
+        driver= BrowserFabric.getDriver(Browsers.CHROME);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
