@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+    <test name="All tests">
+        <classes>
+            <class name="seleniumTests.LoginTest">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_LoggedToApp" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp1" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp2" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp3" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                </methods>
+            </class>
+            <class name="seleniumTests.LoginTestNew">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_LoggedToApp" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp1" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp2" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp3" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                </methods>
+            </class>
+            <class name="seleniumTests.PlaylistTests">
+                <methods>
+                    <include name="playlistTests_createPlaylist_PlaylistCreated" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated1" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed1" />
+                </methods>
+            </class>
+            <class name="seleniumTests.PlaylistTestsNew">
+                <methods>
+                    <include name="playlistTests_createPlaylist_PlaylistCreated" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated1" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
