@@ -4,12 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class LoginPage {
-    private WebDriver driver;
+
+public class LoginPage extends BasePage{
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public MainPage loginToApp(String email, String password){
@@ -20,8 +21,6 @@ public class LoginPage {
     }
 
     public boolean isError(){
-//        var errors = driver.findElements(By.xpath("//*[@class='error']"));
-//        return errors.size()==1;
         try {
             driver.findElement(By.xpath("//*[@class='error']"));
         } catch (NoSuchElementException error){
@@ -30,6 +29,7 @@ public class LoginPage {
         return true;
     }
     public WebElement getEmail() {
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@type='email']")));
         return driver.findElement(By.xpath("//*[@type='email']"));
     }
 

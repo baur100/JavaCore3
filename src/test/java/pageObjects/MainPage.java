@@ -2,57 +2,63 @@ package pageObjects;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-
-public class MainPage {
-    private WebDriver driver;
-
+public class MainPage extends BasePage {
     public MainPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
-
     public boolean isMain() {
-        var list = driver.findElements(By.cssSelector("[class='fa fa-sign-out control']"));
-        return list.size() == 1;
+        var list =driver.findElements(By.cssSelector("[class='fa fa-sign-out control']"));
+        return list.size()==1;
     }
+    public void clickPlusButton() {
+        for (int i = 0; i < 50; i++){
+            try {
+                driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")).click();
+                return;
+            } catch (ElementClickInterceptedException ignored) {
 
-    public void createPlaylist(String Playlist) {
-//        getPlus().click();
-        entryField().sendKeys("V_Pl3", Keys.ENTER);
-    }
-
-    public void renamePlaylist(){
-        var playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/5208']"));
-        Actions actions = new Actions(driver);
-        actions.doubleClick(playlist).perform();
-         var editField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));
-         editField.sendKeys(Keys.CONTROL+"a");
-         editField.sendKeys("Victoria_New");
-         editField.sendKeys(Keys.ENTER);
-    }
-
-
-    public boolean checkPlaylist() {
-        try {
-            driver.findElement(By.xpath("//*[@href='#!/playlist/5208']"));
-        } catch (NoSuchElementException error) {
-            return false;
+            }
         }
-        return true;
+        throw new ElementClickInterceptedException("Element not reachable");
     }
 
-    public WebElement getPlus() {
-        return driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']"));
-    }
 
-    public WebElement entryField() {
-
+    public WebElement getNewPlaylistField(){
         return driver.findElement(By.xpath("//*[@placeholder='↵ to save']"));
     }
 
-    public WebElement playlist() {
+    public String createPlaylist(String name){
+        clickPlusButton();
+        getNewPlaylistField().sendKeys(name);
+        getNewPlaylistField().sendKeys(Keys.RETURN);
 
-        return driver.findElement(By.xpath("//*[@href='#!/playlist/5208']"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='success show']")));
+        String url = driver.getCurrentUrl();
+        return url.split("/")[5];
+    }
+    public boolean checkPlaylist(String id){
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
+        return list.size()==1;
+    }
+    public boolean checkPlaylist(String id, String name){
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
+        if(list.size()==0){
+            return false;
+        };
+        return name.equals(list.get(0).getText());
     }
 
+    public void renamePlaylist(String playlistId, String newName) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        var playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
+        js.executeScript("arguments[0].scrollIntoView();", playlist);
+        Actions actions = new Actions(driver);
+        actions.doubleClick(playlist).perform();
+        var editField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));
+        editField.sendKeys(Keys.CONTROL+"a");
+        editField.sendKeys(newName);
+        editField.sendKeys(Keys.RETURN);
+    }
 }
