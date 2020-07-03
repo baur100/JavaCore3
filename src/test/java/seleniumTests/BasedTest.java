@@ -22,10 +22,10 @@ public class BasedTest {
     @BeforeMethod
     public void startUp() throws NoSuchFieldException {
 
-        driver= BrowserFabric.getDriver(Browsers.CHROME);
+        driver= BrowserFabric.getDriver(Browsers.OPERA);
 
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://koelapp.testpro.io");
         LoginPage loginPage = new LoginPage(driver);
         mainPage = loginPage.loginToApp("testpro.user03@testpro.io", "te$t$tudent");

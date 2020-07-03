@@ -22,6 +22,36 @@ public class LoginTest extends  BasedTest{
         Assert.assertTrue(mainPage.isMain());
 
     }
+    @Test(enabled = false)
+    public void loginTest_CorrectCredentials_LoggedToApp1() throws InterruptedException {
+
+        Assert.assertTrue(mainPage.isMain());
+
+    }
+    @Test
+    public void loginTest_CorrectCredentials_LoggedToApp2() throws InterruptedException {
+
+        Assert.assertTrue(mainPage.isMain());
+
+    }
+    @Test
+    public void loginTest_CorrectCredentials_LoggedToApp3() throws InterruptedException {
+
+        Assert.assertTrue(mainPage.isMain());
+
+    }
+    @Test
+    public void loginTest_CorrectCredentials_LoggedToApp4() throws InterruptedException {
+
+        Assert.assertTrue(mainPage.isMain());
+
+    }
+    @Test
+    public void loginTest_CorrectCredentials_LoggedToApp5() throws InterruptedException {
+
+        Assert.assertTrue(mainPage.isMain());
+
+    }
 
 //    @Test
 //    public void loginTest_WrongCredentials_Error() {
