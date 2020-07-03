@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+    <parameter name="email" value="testpro.user03@testpro.io"/>
+        <parameter name="password" value="te$t$tudent"/>
     <test name="All tests">
         <classes>
             <class name="seleniumTests.LoginTest">
@@ -11,6 +13,7 @@
                     <include name="loginTest_CorrectCredentials_LoggedToApp3"/>
                     <include name="loginTest_CorrectCredentials_LoggedToApp4"/>
                     <include name="loginTest_CorrectCredentials_LoggedToApp5"/>
+                    <include name="ticketPriceForCalculator"/>
                 </methods>
                 </class>
             <class name="seleniumTests.LoginTestNew">

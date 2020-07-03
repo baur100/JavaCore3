@@ -10,6 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
@@ -19,16 +20,17 @@ import java.util.concurrent.TimeUnit;
 public class BasedTest {
     protected WebDriver driver;
     protected MainPage mainPage;
+    @Parameters({"email","password"})
     @BeforeMethod
-    public void startUp() throws NoSuchFieldException {
+    public void startUp(String loginId, String pwd) throws NoSuchFieldException {
 
-        driver= BrowserFabric.getDriver(Browsers.OPERA);
+        driver= BrowserFabric.getDriver(Browsers.CHROME);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("https://koelapp.testpro.io");
         LoginPage loginPage = new LoginPage(driver);
-        mainPage = loginPage.loginToApp("testpro.user03@testpro.io", "te$t$tudent");
+        mainPage = loginPage.loginToApp(loginId, pwd);
     }
 
     @AfterMethod
@@ -37,3 +39,4 @@ public class BasedTest {
         driver.quit();
     }
 }
+//"testpro.user03@testpro.io", "te$t$tudent"
