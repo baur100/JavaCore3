@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+<suite name="Master Suite"> <!-- parallel="classes" thread-count="4"> -->
+    <parameter name="email" value="testpro.user03@testpro.io"/>
+    <parameter name="password" value="te$t$tudent"/>
+    <parameter name="wrong-password" value="********"/>
     <test name="All tests">
         <classes>
             <class name="seleniumTests.LoginTest">
                 <methods>
                     <include name="loginTest_CorrectCredentials_LoggedToApp" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp1" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp2" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp3" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp1" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp2" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp3" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp4" />
+                    <exclude name="ticketPriceCalculator" />
                 </methods>
             </class>
             <class name="seleniumTests.LoginTestNew">
                 <methods>
-                    <include name="loginTest_CorrectCredentials_LoggedToApp5" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp6" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp7" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp8" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp9" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp5" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp6" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp7" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp8" />
+                    <exclude name="loginTest_CorrectCredentials_LoggedToApp9" />
                 </methods>
             </class>
             <class name="seleniumTests.PlaylistTests">
                 <methods>
-                    <include name="playlistTests_createPlaylist_PlaylistCreated" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed" />
-                    <include name="playlistTests_createPlaylist_PlaylistCreated1" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed1" />
+                    <exclude name="playlistTests_createPlaylist_PlaylistCreated" />
+                    <exclude name="playlistTests_renamePlaylist_PlaylistRenamed" />
+                    <exclude name="playlistTests_createPlaylist_PlaylistCreated1" />
+                    <exclude name="playlistTests_renamePlaylist_PlaylistRenamed1" />
                 </methods>
             </class>
             <class name="seleniumTests.PlaylistTestsNew">
                 <methods>
-                    <include name="playlistTests_createPlaylist_PlaylistCreated2" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed2" />
-                    <include name="playlistTests_createPlaylist_PlaylistCreated3" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed3" />
+                    <exclude name="playlistTests_createPlaylist_PlaylistCreated2" />
+                    <exclude name="playlistTests_renamePlaylist_PlaylistRenamed2" />
+                    <exclude name="playlistTests_createPlaylist_PlaylistCreated3" />
+                    <exclude name="playlistTests_renamePlaylist_PlaylistRenamed3" />
                 </methods>
             </class>
         </classes>

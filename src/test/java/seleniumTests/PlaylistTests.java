@@ -16,4 +16,15 @@ public class PlaylistTests extends BaseTest{
         mainPage.renamePlaylist(playlistId,"newName");
         Assert.assertTrue(mainPage.checkPlaylist(playlistId,"newName"));
     }
+    @Test
+    public void playlistTests_createPlaylist_PlaylistCreated1(){
+        String playlistId = mainPage.createPlaylist("xxxxx");
+        Assert.assertTrue(mainPage.checkPlaylist(playlistId));
+    }
+    @Test
+    public void playlistTests_renamePlaylist_PlaylistRenamed1(){
+        String playlistId = mainPage.createPlaylist("xxxxx");
+        mainPage.renamePlaylist(playlistId,"newName");
+        Assert.assertTrue(mainPage.checkPlaylist(playlistId,"newName"));
+    }
 }
