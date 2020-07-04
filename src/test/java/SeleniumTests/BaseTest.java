@@ -14,7 +14,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void startUp() throws NoSuchFieldException {
-        driver = BrowserFabric.getDriver(Browsers.OPERA);
+        driver = BrowserFabric.getDriver(Browsers.CHROME);
         driver.get("https://koelapp.testpro.io/");
         LoginPage loginPage = new LoginPage(driver);
         mainPage = loginPage.loginToApp("koeluser21@testpro.io", "te$t$tudent");
