@@ -36,8 +36,10 @@ public class LoginTest extends BaseTest {
 
     @Test(dataProvider = "Credentials")
     public void LoginToApp(String username, String password, boolean result){
+        System.out.println("Email= " + username);
         LoginPage loginPage = new LoginPage(driver);
         mainPage = loginPage.loginToApp(username, password);
+        System.out.println("Boolean: " + mainPage.isMain());
         Assert.assertTrue(mainPage.isMain());
     }
 
