@@ -3,6 +3,7 @@
 <suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
     <parameter name="email" value="koeluser21@testpro.io"/>
     <parameter name ="password" value="te$t$tudent"/>
+    <parameter name ="wrong-password" value="teststudent"/>
     <test name="All tests">
         <classes>
             <class name="SeleniumTests.LoginTest">

@@ -1,5 +1,6 @@
 package SeleniumTests;
 
+import listeners.RetryAnalyzer;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -8,7 +9,7 @@ import pageObjects.LoginPage;
 import passengerForDataProvider.TicketPrice;
 
 public class LoginTest extends BaseTest {
-    @Parameters({"email", "password"})
+    //@Parameters({"email", "wrong-password"})
 
 //    @DataProvider(name = "Credentials")
 //        public Object[][] getData(){
@@ -27,8 +28,8 @@ public class LoginTest extends BaseTest {
 //        mainPage = loginPage.loginToApp(username, password);
 //        Assert.assertTrue(mainPage.isMain());
 //    }
-
-    @Test
+    @Parameters({"email", "password"})
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void loginTestCorrectCredentialsLoggedToApp(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }

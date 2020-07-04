@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="2" total="19" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="Master Suite" duration-ms="33839" started-at="2020-07-04T05:25:23Z" finished-at="2020-07-04T05:25:56Z">
+  <suite name="Master Suite" duration-ms="33811" started-at="2020-07-04T06:19:59Z" finished-at="2020-07-04T06:20:33Z">
     <groups>
     </groups>
-    <test name="All tests" duration-ms="33839" started-at="2020-07-04T05:25:23Z" finished-at="2020-07-04T05:25:56Z">
+    <test name="All tests" duration-ms="33811" started-at="2020-07-04T06:19:59Z" finished-at="2020-07-04T06:20:33Z">
       <class name="SeleniumTests.LoginTest">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="startUp" is-config="true" duration-ms="3389" started-at="2020-07-03T22:25:23Z" finished-at="2020-07-03T22:25:26Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="startUp" is-config="true" duration-ms="2956" started-at="2020-07-03T23:19:59Z" finished-at="2020-07-03T23:20:02Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="loginTestCorrectCredentialsLoggedToApp" duration-ms="760" started-at="2020-07-03T22:25:26Z" finished-at="2020-07-03T22:25:27Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="loginTestCorrectCredentialsLoggedToApp" duration-ms="689" started-at="2020-07-03T23:20:02Z" finished-at="2020-07-03T23:20:02Z">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="tearDown" is-config="true" duration-ms="3080" started-at="2020-07-03T22:25:27Z" finished-at="2020-07-03T22:25:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="tearDown" is-config="true" duration-ms="3098" started-at="2020-07-03T23:20:02Z" finished-at="2020-07-03T23:20:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="startUp" is-config="true" duration-ms="2419" started-at="2020-07-03T22:25:30Z" finished-at="2020-07-03T22:25:32Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="startUp" is-config="true" duration-ms="2378" started-at="2020-07-03T23:20:06Z" finished-at="2020-07-03T23:20:08Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp1(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="loginTestCorrectCredentialsLoggedToApp1" duration-ms="633" started-at="2020-07-03T22:25:32Z" finished-at="2020-07-03T22:25:33Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp1(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="loginTestCorrectCredentialsLoggedToApp1" duration-ms="634" started-at="2020-07-03T23:20:08Z" finished-at="2020-07-03T23:20:09Z">
           <params>
             <param index="0">
               <value>
@@ -75,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="tearDown" is-config="true" duration-ms="3068" started-at="2020-07-03T22:25:33Z" finished-at="2020-07-03T22:25:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="tearDown" is-config="true" duration-ms="3078" started-at="2020-07-03T23:20:09Z" finished-at="2020-07-03T23:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="startUp" is-config="true" duration-ms="2575" started-at="2020-07-03T22:25:36Z" finished-at="2020-07-03T22:25:39Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="startUp" is-config="true" duration-ms="2383" started-at="2020-07-03T23:20:12Z" finished-at="2020-07-03T23:20:14Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="loginTestCorrectCredentialsLoggedToApp2" duration-ms="652" started-at="2020-07-03T22:25:39Z" finished-at="2020-07-03T22:25:39Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="loginTestCorrectCredentialsLoggedToApp2" duration-ms="665" started-at="2020-07-03T23:20:14Z" finished-at="2020-07-03T23:20:15Z">
           <params>
             <param index="0">
               <value>
@@ -111,11 +111,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="tearDown" is-config="true" duration-ms="3382" started-at="2020-07-03T22:25:39Z" finished-at="2020-07-03T22:25:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="tearDown" is-config="true" duration-ms="3065" started-at="2020-07-03T23:20:15Z" finished-at="2020-07-03T23:20:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="startUp" is-config="true" duration-ms="2091" started-at="2020-07-03T22:25:43Z" finished-at="2020-07-03T22:25:45Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="startUp" is-config="true" duration-ms="2576" started-at="2020-07-03T23:20:18Z" finished-at="2020-07-03T23:20:20Z">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="loginTestCorrectCredentialsLoggedToApp3" duration-ms="640" started-at="2020-07-03T22:25:45Z" finished-at="2020-07-03T22:25:45Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="loginTestCorrectCredentialsLoggedToApp3" duration-ms="728" started-at="2020-07-03T23:20:20Z" finished-at="2020-07-03T23:20:21Z">
           <params>
             <param index="0">
               <value>
@@ -147,11 +147,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="tearDown" is-config="true" duration-ms="3065" started-at="2020-07-03T22:25:45Z" finished-at="2020-07-03T22:25:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="tearDown" is-config="true" duration-ms="3065" started-at="2020-07-03T23:20:21Z" finished-at="2020-07-03T23:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="startUp" is-config="true" duration-ms="2246" started-at="2020-07-03T22:25:48Z" finished-at="2020-07-03T22:25:51Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="startUp" is-config="true" duration-ms="2535" started-at="2020-07-03T23:20:24Z" finished-at="2020-07-03T23:20:27Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp4(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="loginTestCorrectCredentialsLoggedToApp4" duration-ms="627" started-at="2020-07-03T22:25:51Z" finished-at="2020-07-03T22:25:51Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp4(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="loginTestCorrectCredentialsLoggedToApp4" duration-ms="671" started-at="2020-07-03T23:20:27Z" finished-at="2020-07-03T23:20:27Z">
           <params>
             <param index="0">
               <value>
@@ -183,13 +183,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp4 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@3aa9e816]" name="tearDown" is-config="true" duration-ms="3067" started-at="2020-07-03T22:25:51Z" finished-at="2020-07-03T22:25:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTest@17d99928]" name="tearDown" is-config="true" duration-ms="3070" started-at="2020-07-03T23:20:27Z" finished-at="2020-07-03T23:20:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SeleniumTests.LoginTest -->
       <class name="SeleniumTests.PlayListTests">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="startUp" is-config="true" duration-ms="3386" started-at="2020-07-03T22:25:23Z" finished-at="2020-07-03T22:25:26Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="startUp" is-config="true" duration-ms="3056" started-at="2020-07-03T23:19:59Z" finished-at="2020-07-03T23:20:02Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="createPlayList_PlayListCreated(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="createPlayList_PlayListCreated" duration-ms="2848" started-at="2020-07-03T22:25:26Z" finished-at="2020-07-03T22:25:29Z">
+        <test-method status="PASS" signature="createPlayList_PlayListCreated(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="createPlayList_PlayListCreated" duration-ms="2715" started-at="2020-07-03T23:20:02Z" finished-at="2020-07-03T23:20:05Z">
           <params>
             <param index="0">
               <value>
@@ -221,11 +221,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPlayList_PlayListCreated -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="tearDown" is-config="true" duration-ms="3066" started-at="2020-07-03T22:25:29Z" finished-at="2020-07-03T22:25:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="tearDown" is-config="true" duration-ms="3067" started-at="2020-07-03T23:20:05Z" finished-at="2020-07-03T23:20:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="startUp" is-config="true" duration-ms="2095" started-at="2020-07-03T22:25:32Z" finished-at="2020-07-03T22:25:34Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="startUp" is-config="true" duration-ms="2233" started-at="2020-07-03T23:20:08Z" finished-at="2020-07-03T23:20:10Z">
           <params>
             <param index="0">
               <value>
@@ -241,7 +241,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="createPlayList_PlayListCreated1(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="createPlayList_PlayListCreated1" duration-ms="2585" started-at="2020-07-03T22:25:34Z" finished-at="2020-07-03T22:25:37Z">
+        <test-method status="PASS" signature="createPlayList_PlayListCreated1(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="createPlayList_PlayListCreated1" duration-ms="2711" started-at="2020-07-03T23:20:10Z" finished-at="2020-07-03T23:20:13Z">
           <params>
             <param index="0">
               <value>
@@ -257,11 +257,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPlayList_PlayListCreated1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="tearDown" is-config="true" duration-ms="3297" started-at="2020-07-03T22:25:37Z" finished-at="2020-07-03T22:25:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="tearDown" is-config="true" duration-ms="3120" started-at="2020-07-03T23:20:13Z" finished-at="2020-07-03T23:20:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="startUp" is-config="true" duration-ms="2133" started-at="2020-07-03T22:25:40Z" finished-at="2020-07-03T22:25:42Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="startUp" is-config="true" duration-ms="2185" started-at="2020-07-03T23:20:16Z" finished-at="2020-07-03T23:20:18Z">
           <params>
             <param index="0">
               <value>
@@ -277,7 +277,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="renamePlayList_PlayListCreated(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="renamePlayList_PlayListCreated" duration-ms="3048" started-at="2020-07-03T22:25:42Z" finished-at="2020-07-03T22:25:45Z">
+        <test-method status="PASS" signature="renamePlayList_PlayListCreated(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="renamePlayList_PlayListCreated" duration-ms="3023" started-at="2020-07-03T23:20:18Z" finished-at="2020-07-03T23:20:21Z">
           <params>
             <param index="0">
               <value>
@@ -293,159 +293,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- renamePlayList_PlayListCreated -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@3834d63f]" name="tearDown" is-config="true" duration-ms="3065" started-at="2020-07-03T22:25:45Z" finished-at="2020-07-03T22:25:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTests@1ae369b7]" name="tearDown" is-config="true" duration-ms="3067" started-at="2020-07-03T23:20:21Z" finished-at="2020-07-03T23:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SeleniumTests.PlayListTests -->
-      <class name="SeleniumTests.PlayListTestsNew">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="startUp" is-config="true" duration-ms="3404" started-at="2020-07-03T22:25:23Z" finished-at="2020-07-03T22:25:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="createPlayList_PlayListCreated2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="createPlayList_PlayListCreated2" duration-ms="2836" started-at="2020-07-03T22:25:26Z" finished-at="2020-07-03T22:25:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPlayList_PlayListCreated2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="tearDown" is-config="true" duration-ms="3067" started-at="2020-07-03T22:25:29Z" finished-at="2020-07-03T22:25:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="startUp" is-config="true" duration-ms="2144" started-at="2020-07-03T22:25:32Z" finished-at="2020-07-03T22:25:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="createPlayList_PlayListCreated3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="createPlayList_PlayListCreated3" duration-ms="2590" started-at="2020-07-03T22:25:34Z" finished-at="2020-07-03T22:25:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPlayList_PlayListCreated3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="tearDown" is-config="true" duration-ms="3133" started-at="2020-07-03T22:25:37Z" finished-at="2020-07-03T22:25:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="startUp" is-config="true" duration-ms="2226" started-at="2020-07-03T22:25:40Z" finished-at="2020-07-03T22:25:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="renamePlayList_PlayListCreated2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="renamePlayList_PlayListCreated2" duration-ms="2947" started-at="2020-07-03T22:25:42Z" finished-at="2020-07-03T22:25:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- renamePlayList_PlayListCreated2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="tearDown" is-config="true" duration-ms="3174" started-at="2020-07-03T22:25:45Z" finished-at="2020-07-03T22:25:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="startUp" is-config="true" duration-ms="2220" started-at="2020-07-03T22:25:48Z" finished-at="2020-07-03T22:25:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="renamePlayList_PlayListCreated3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="renamePlayList_PlayListCreated3" duration-ms="2903" started-at="2020-07-03T22:25:50Z" finished-at="2020-07-03T22:25:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[koeluser21@testpro.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[te$t$tudent]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- renamePlayList_PlayListCreated3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@1ae369b7]" name="tearDown" is-config="true" duration-ms="3176" started-at="2020-07-03T22:25:53Z" finished-at="2020-07-03T22:25:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SeleniumTests.PlayListTestsNew -->
       <class name="SeleniumTests.LoginTestNew">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="startUp" is-config="true" duration-ms="3386" started-at="2020-07-03T22:25:23Z" finished-at="2020-07-03T22:25:26Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="startUp" is-config="true" duration-ms="3089" started-at="2020-07-03T23:19:59Z" finished-at="2020-07-03T23:20:02Z">
           <params>
             <param index="0">
               <value>
@@ -461,15 +315,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp5()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="loginTestCorrectCredentialsLoggedToApp5" duration-ms="813" started-at="2020-07-03T22:25:26Z" finished-at="2020-07-03T22:25:27Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp5()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="loginTestCorrectCredentialsLoggedToApp5" duration-ms="719" started-at="2020-07-03T23:20:02Z" finished-at="2020-07-03T23:20:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp5 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="tearDown" is-config="true" duration-ms="3090" started-at="2020-07-03T22:25:27Z" finished-at="2020-07-03T22:25:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="tearDown" is-config="true" duration-ms="3164" started-at="2020-07-03T23:20:03Z" finished-at="2020-07-03T23:20:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="startUp" is-config="true" duration-ms="2423" started-at="2020-07-03T22:25:30Z" finished-at="2020-07-03T22:25:32Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="startUp" is-config="true" duration-ms="2230" started-at="2020-07-03T23:20:06Z" finished-at="2020-07-03T23:20:08Z">
           <params>
             <param index="0">
               <value>
@@ -485,7 +339,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp6(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="loginTestCorrectCredentialsLoggedToApp6" duration-ms="663" started-at="2020-07-03T22:25:32Z" finished-at="2020-07-03T22:25:33Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp6(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="loginTestCorrectCredentialsLoggedToApp6" duration-ms="623" started-at="2020-07-03T23:20:08Z" finished-at="2020-07-03T23:20:09Z">
           <params>
             <param index="0">
               <value>
@@ -501,11 +355,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp6 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="tearDown" is-config="true" duration-ms="3065" started-at="2020-07-03T22:25:33Z" finished-at="2020-07-03T22:25:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="tearDown" is-config="true" duration-ms="3072" started-at="2020-07-03T23:20:09Z" finished-at="2020-07-03T23:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="startUp" is-config="true" duration-ms="2522" started-at="2020-07-03T22:25:36Z" finished-at="2020-07-03T22:25:39Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="startUp" is-config="true" duration-ms="2354" started-at="2020-07-03T23:20:12Z" finished-at="2020-07-03T23:20:14Z">
           <params>
             <param index="0">
               <value>
@@ -521,7 +375,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp7(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="loginTestCorrectCredentialsLoggedToApp7" duration-ms="615" started-at="2020-07-03T22:25:39Z" finished-at="2020-07-03T22:25:39Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp7(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="loginTestCorrectCredentialsLoggedToApp7" duration-ms="659" started-at="2020-07-03T23:20:14Z" finished-at="2020-07-03T23:20:15Z">
           <params>
             <param index="0">
               <value>
@@ -537,11 +391,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp7 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="tearDown" is-config="true" duration-ms="3068" started-at="2020-07-03T22:25:39Z" finished-at="2020-07-03T22:25:42Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="tearDown" is-config="true" duration-ms="3114" started-at="2020-07-03T23:20:15Z" finished-at="2020-07-03T23:20:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="startUp" is-config="true" duration-ms="2136" started-at="2020-07-03T22:25:42Z" finished-at="2020-07-03T22:25:44Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="startUp" is-config="true" duration-ms="2328" started-at="2020-07-03T23:20:18Z" finished-at="2020-07-03T23:20:20Z">
           <params>
             <param index="0">
               <value>
@@ -557,7 +411,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp8(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="loginTestCorrectCredentialsLoggedToApp8" duration-ms="712" started-at="2020-07-03T22:25:44Z" finished-at="2020-07-03T22:25:45Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp8(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="loginTestCorrectCredentialsLoggedToApp8" duration-ms="780" started-at="2020-07-03T23:20:20Z" finished-at="2020-07-03T23:20:21Z">
           <params>
             <param index="0">
               <value>
@@ -573,11 +427,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp8 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="tearDown" is-config="true" duration-ms="3114" started-at="2020-07-03T22:25:45Z" finished-at="2020-07-03T22:25:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="tearDown" is-config="true" duration-ms="3070" started-at="2020-07-03T23:20:21Z" finished-at="2020-07-03T23:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="startUp" is-config="true" duration-ms="2199" started-at="2020-07-03T22:25:48Z" finished-at="2020-07-03T22:25:50Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="startUp" is-config="true" duration-ms="2633" started-at="2020-07-03T23:20:24Z" finished-at="2020-07-03T23:20:27Z">
           <params>
             <param index="0">
               <value>
@@ -593,7 +447,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp9(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="loginTestCorrectCredentialsLoggedToApp9" duration-ms="606" started-at="2020-07-03T22:25:50Z" finished-at="2020-07-03T22:25:51Z">
+        <test-method status="PASS" signature="loginTestCorrectCredentialsLoggedToApp9(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="loginTestCorrectCredentialsLoggedToApp9" duration-ms="716" started-at="2020-07-03T23:20:27Z" finished-at="2020-07-03T23:20:27Z">
           <params>
             <param index="0">
               <value>
@@ -609,11 +463,157 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCorrectCredentialsLoggedToApp9 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@17d99928]" name="tearDown" is-config="true" duration-ms="3067" started-at="2020-07-03T22:25:51Z" finished-at="2020-07-03T22:25:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.LoginTestNew@3834d63f]" name="tearDown" is-config="true" duration-ms="3120" started-at="2020-07-03T23:20:27Z" finished-at="2020-07-03T23:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SeleniumTests.LoginTestNew -->
+      <class name="SeleniumTests.PlayListTestsNew">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="startUp" is-config="true" duration-ms="3005" started-at="2020-07-03T23:19:59Z" finished-at="2020-07-03T23:20:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="createPlayList_PlayListCreated2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="createPlayList_PlayListCreated2" duration-ms="2796" started-at="2020-07-03T23:20:02Z" finished-at="2020-07-03T23:20:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlayList_PlayListCreated2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="tearDown" is-config="true" duration-ms="3066" started-at="2020-07-03T23:20:05Z" finished-at="2020-07-03T23:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="startUp" is-config="true" duration-ms="2136" started-at="2020-07-03T23:20:08Z" finished-at="2020-07-03T23:20:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="createPlayList_PlayListCreated3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="createPlayList_PlayListCreated3" duration-ms="2745" started-at="2020-07-03T23:20:10Z" finished-at="2020-07-03T23:20:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlayList_PlayListCreated3 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="tearDown" is-config="true" duration-ms="3077" started-at="2020-07-03T23:20:13Z" finished-at="2020-07-03T23:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="startUp" is-config="true" duration-ms="2242" started-at="2020-07-03T23:20:16Z" finished-at="2020-07-03T23:20:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="renamePlayList_PlayListCreated2(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="renamePlayList_PlayListCreated2" duration-ms="3020" started-at="2020-07-03T23:20:18Z" finished-at="2020-07-03T23:20:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlayList_PlayListCreated2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="tearDown" is-config="true" duration-ms="3168" started-at="2020-07-03T23:20:21Z" finished-at="2020-07-03T23:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="startUp" is-config="true" duration-ms="2575" started-at="2020-07-03T23:20:24Z" finished-at="2020-07-03T23:20:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="renamePlayList_PlayListCreated3(java.lang.String, java.lang.String)[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="renamePlayList_PlayListCreated3" duration-ms="2893" started-at="2020-07-03T23:20:27Z" finished-at="2020-07-03T23:20:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koeluser21@testpro.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[te$t$tudent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renamePlayList_PlayListCreated3 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SeleniumTests.PlayListTestsNew@6fffcba5]" name="tearDown" is-config="true" duration-ms="3066" started-at="2020-07-03T23:20:30Z" finished-at="2020-07-03T23:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumTests.PlayListTestsNew -->
     </test> <!-- All tests -->
   </suite> <!-- Master Suite -->
 </testng-results>
