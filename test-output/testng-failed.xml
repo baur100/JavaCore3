@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Master Suite]" parallel="classes">
+  <test name="All tests(failed)" parallel="classes">
+    <classes>
+      <class name="SeleniumTests.LoginTestNew">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- SeleniumTests.LoginTestNew -->
+      <class name="SeleniumTests.PlayListTestsNew">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- SeleniumTests.PlayListTestsNew -->
+      <class name="SeleniumTests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="LoginToApp" invocation-numbers="2"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- SeleniumTests.LoginTest -->
+      <class name="SeleniumTests.PlayListTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- SeleniumTests.PlayListTests -->
+    </classes>
+  </test> <!-- All tests(failed) -->
+</suite> <!-- Failed suite [Master Suite] -->

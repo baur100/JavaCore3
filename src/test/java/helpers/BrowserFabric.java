@@ -43,7 +43,7 @@ public class BrowserFabric {
 
     private static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         options.addArguments("window-seze=1400,1000");
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         return new ChromeDriver(options);

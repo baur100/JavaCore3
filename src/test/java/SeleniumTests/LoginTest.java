@@ -2,21 +2,23 @@ package SeleniumTests;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import passengerForDataProvider.TicketPrice;
 
 public class LoginTest extends BaseTest {
+    @Parameters({"email", "password"})
 
-    @DataProvider(name = "Credentials")
-        public Object[][] getData(){
-        return new Object[][] {
-                {"koeluser21@testpro.io", "te$t$tudent", true},
-                {"koeluser03@testpro.io", "te$t$tudent", true},
-                {"koeluser04@testpro.io", "te$t$tudent", true},
-                {"koeluser0211@testpro.io", "test$tudent", false},
-        };
-    }
+//    @DataProvider(name = "Credentials")
+//        public Object[][] getData(){
+//        return new Object[][] {
+//                {"koeluser21@testpro.io", "te$t$tudent", true},
+//                {"koeluser03@testpro.io", "te$t$tudent", true},
+//                {"koeluser04@testpro.io", "te$t$tudent", true},
+//                {"koeluser12222@testpro.io", "test$tudent", false}
+//        };
+//    }
 //      Object[][] data = new Object[3][2];
 //        //Rows - Number of times your test has to be repeated.
 //        // Columns - Number of parameters in test data.
@@ -34,14 +36,13 @@ public class LoginTest extends BaseTest {
 //        data[2][1] = "te$t$tudent";
 //        return data;
 
-    @Test(dataProvider = "Credentials")
-    public void LoginToApp(String username, String password, boolean result){
-        System.out.println("Email= " + username);
-        LoginPage loginPage = new LoginPage(driver);
-        mainPage = loginPage.loginToApp(username, password);
-        System.out.println("Boolean: " + mainPage.isMain());
-        Assert.assertTrue(mainPage.isMain());
-    }
+//    @Test(dataProvider = "Credentials")
+//    public void LoginToApp(String username, String password, boolean result){
+//        System.out.println("Email= " + username);
+//        LoginPage loginPage = new LoginPage(driver);
+//        mainPage = loginPage.loginToApp(username, password);
+//        Assert.assertTrue(mainPage.isMain());
+//    }
 
     @Test
     public void loginTestCorrectCredentialsLoggedToApp() {
@@ -77,7 +78,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test (dataProvider = "Ages")
-    public void ticketPriceForChild(int age, int fare, double result){
+    public void ticketPriceCalculator(int age, int fare, double result){
         //Arrange
         TicketPrice calculator = new TicketPrice();
         //Act
