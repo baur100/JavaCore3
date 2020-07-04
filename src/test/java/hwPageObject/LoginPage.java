@@ -9,13 +9,13 @@ import pageObjects.BasePage;
 import pageObjects.MainPage;
 
 
-public class LoginPage extends BasePage {
+public class LoginPage extends BasePage{
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public pageObjects.MainPage loginToApp(String email, String password){
+    public MainPage loginToApp(String email, String password){
         getEmail().sendKeys(email);
         getPassword().sendKeys(password);
         getLoginButton().click();

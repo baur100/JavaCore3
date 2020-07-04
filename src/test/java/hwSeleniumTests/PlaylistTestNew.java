@@ -1,22 +1,15 @@
 package hwSeleniumTests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
-import seleniumTests.BaseTest;
 
-import java.util.concurrent.TimeUnit;
-
-public class PlaylistTests extends BaseTest{
+public class PlaylistTestNew extends BaseTest {
     @Parameters({"email","password"})
     @Test
-    public void playlistTests_createPlaylist_PlaylistCreated(String loginId,String pwd){
+    public void playlistTests_createPlaylist_PlaylistCreated3(String loginId,String pwd){
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp(loginId,pwd);
         String playlistId = mainPage.createPlaylist("xxxxx");
@@ -24,7 +17,7 @@ public class PlaylistTests extends BaseTest{
     }
     @Parameters({"email","password"})
     @Test
-    public void playlistTests_renamePlaylist_PlaylistRenamed(String loginId,String pwd){
+    public void playlistTests_renamePlaylist_PlaylistRenamed2(String loginId,String pwd){
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp(loginId,pwd);
         String playlistId = mainPage.createPlaylist("xxxxx");
@@ -33,7 +26,7 @@ public class PlaylistTests extends BaseTest{
     }
     @Parameters({"email","password"})
     @Test
-    public void playlistTests_createPlaylist_PlaylistCreated2(String loginId,String pwd){
+    public void playlistTests_createPlaylist_PlaylistCreated4(String loginId,String pwd){
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp(loginId,pwd);
         String playlistId = mainPage.createPlaylist("xxxxx");
@@ -41,7 +34,7 @@ public class PlaylistTests extends BaseTest{
     }
     @Parameters({"email","password"})
     @Test
-    public void playlistTests_renamePlaylist_PlaylistRenamed1(String loginId,String pwd){
+    public void playlistTests_renamePlaylist_PlaylistRenamed3(String loginId,String pwd){
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp(loginId,pwd);
         String playlistId = mainPage.createPlaylist("xxxxx");
