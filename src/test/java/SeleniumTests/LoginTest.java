@@ -19,23 +19,7 @@ public class LoginTest extends BaseTest {
 //                {"koeluser12222@testpro.io", "test$tudent", false}
 //        };
 //    }
-//      Object[][] data = new Object[3][2];
-//        //Rows - Number of times your test has to be repeated.
-//        // Columns - Number of parameters in test data.
 //
-//// 1st row
-//        data[0][0] ="koeluser21@testpro.io";
-//        data[0][1] = "te$t$tudent";
-//
-//// 2nd row
-//        data[1][0] ="koeluser03@testpro.io";
-//        data[1][1] = "te$t$tudent";
-//
-//// 3rd row
-//        data[2][0] ="koeluser04@testpro.io";
-//        data[2][1] = "te$t$tudent";
-//        return data;
-
 //    @Test(dataProvider = "Credentials")
 //    public void LoginToApp(String username, String password, boolean result){
 //        System.out.println("Email= " + username);
@@ -45,23 +29,27 @@ public class LoginTest extends BaseTest {
 //    }
 
     @Test
-    public void loginTestCorrectCredentialsLoggedToApp() {
+    public void loginTestCorrectCredentialsLoggedToApp(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }
+    @Parameters({"email", "password"})
     @Test
-    public void loginTestCorrectCredentialsLoggedToApp1() {
+    public void loginTestCorrectCredentialsLoggedToApp1(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }
+    @Parameters({"email", "password"})
     @Test
-    public void loginTestCorrectCredentialsLoggedToApp2() {
+    public void loginTestCorrectCredentialsLoggedToApp2(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }
+    @Parameters({"email", "password"})
     @Test
-    public void loginTestCorrectCredentialsLoggedToApp3() {
+    public void loginTestCorrectCredentialsLoggedToApp3(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }
+    @Parameters({"email", "password"})
     @Test
-    public void loginTestCorrectCredentialsLoggedToApp4() {
+    public void loginTestCorrectCredentialsLoggedToApp4(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());
     }
 
