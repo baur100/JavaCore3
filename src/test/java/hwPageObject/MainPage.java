@@ -1,11 +1,14 @@
 package hwPageObject;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.BasePage;
 
 public class MainPage extends BasePage {
+    private static Logger logger = LogManager.getLogger(MainPage.class) ;
     public MainPage(WebDriver driver) {
         super(driver);
     }
@@ -30,10 +33,15 @@ public class MainPage extends BasePage {
         return driver.findElement(By.xpath("//*[@placeholder='↵ to save']"));
     }
 
-    public String createPlaylist(String name){
+    public String createPlaylist (String name){
+        logger.info("test started");
         clickPlusButton();
+        logger.info("plus button clicked");
         getNewPlaylistField().sendKeys(name);
+        logger.trace("name pasted");
         getNewPlaylistField().sendKeys(Keys.RETURN);
+        logger.info("button clicked");
+
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='success show']")));
         String url = driver.getCurrentUrl();

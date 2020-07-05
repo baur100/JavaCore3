@@ -1,5 +1,7 @@
 package hwPageObject;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +12,7 @@ public  class BasePage {
     protected WebDriver driver;
     protected FluentWait<WebDriver> fluentWait;
     protected WebDriverWait wait;
+
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
