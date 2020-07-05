@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="JavaCore3(failed)">
+    <classes>
+      <class name="seleniumTests.PlaylistTestsNew">
+        <methods>
+          <include name="playlistTests_createPlaylist_playlistCreated1"/>
+        </methods>
+      </class> <!-- seleniumTests.PlaylistTestsNew -->
+      <class name="seleniumTests.PlaylistTests">
+        <methods>
+          <include name="playlistTests_createPlaylist_playlistCreated"/>
+        </methods>
+      </class> <!-- seleniumTests.PlaylistTests -->
+    </classes>
+  </test> <!-- JavaCore3(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

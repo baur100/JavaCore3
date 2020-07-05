@@ -4,15 +4,19 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import seleniumTests.BaseTest;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class MainPage extends BasePage{
-
+    protected static Logger logger = LogManager.getLogger(MainPage.class);
     public MainPage(WebDriver driver) {
         super(driver);
     }
+
 
     public class HomePageSelectors {
         public static final String homeButtonXpath = "//*[@class='home active']";
@@ -22,6 +26,34 @@ public class MainPage extends BasePage{
         public static final String allSongMenuCss = "[href='#!/songs']";
 
     }
+
+    public void dragSongToPlaylist(String id) {
+        Actions action = new Actions(driver);
+        getAllSongMenu().click();
+        var song = driver.findElement(By.xpath("//*[contains(@data-song-id,'ee6')]"));
+        var myPlaylist = driver.findElement(By.xpath("//*[@href=\"#!/playlist/"+id+"\"]"));
+        action.moveToElement(driver.findElement(By.cssSelector(HomePageSelectors.playlistsSideBarCss)));
+        var js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();",myPlaylist);
+        action.dragAndDrop(song,myPlaylist);
+    }
+
+    public void deletePlaylist(String id) {
+        var myPlaylist = driver.findElement(By.xpath("//*[@href=\"#!/playlist/"+id+"\"]"));
+        var js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();",myPlaylist);
+        myPlaylist.click();
+        var deleteButtonList = driver.findElements(By.xpath("//*[contains(@class,'del btn')]"));
+        deleteButtonList.add(driver.findElement(By.xpath("//*[contains(@class,'del btn')]")));
+        for (var v:deleteButtonList) {
+            if (deleteButtonList.size() == 0) {
+                driver.navigate().refresh();
+            }
+            else break;
+        }
+        deleteButtonList.get(0).click();
+    }
+
     public boolean isMain() {
         fluentWait.until(x->x.findElement(By.xpath("//*[@class =\"fa fa-sign-out control\"]")).isDisplayed());
         var signOutButton = driver.findElement(By.xpath("//*[@class =\"fa fa-sign-out control\"]"));
@@ -70,7 +102,7 @@ public class MainPage extends BasePage{
     }
 
     public WebElement getPlaylistNameField(){
-        //fluentWait.until(x->x.findElement(By.xpath(HomePageSelectors.newPlaylistFieldXpath)).isDisplayed());
+        fluentWait.until(x->x.findElement(By.xpath(HomePageSelectors.newPlaylistFieldXpath)).isDisplayed());
         return driver.findElement(By.xpath(HomePageSelectors.newPlaylistFieldXpath));
 
     }
@@ -80,12 +112,16 @@ public class MainPage extends BasePage{
     }
 
     public String createPlaylist(String name){
+        logger.info("test started");
         Actions actions = new Actions(driver);
         actions.moveToElement(getPlusButton()).click().perform();
         getPlusButton().click();
+        logger.info("plus button clicked");
         getPlaylistNameField().click();
         getPlaylistNameField().sendKeys(name);
+        logger.info("name pasted");
         getPlaylistNameField().sendKeys(Keys.ENTER);
+        logger.info("Enter button pressed");
         fluentWait.until(x->x.findElement(By.xpath("//div[@class = 'success show']")).isDisplayed());
         return getPlaylistId();
 

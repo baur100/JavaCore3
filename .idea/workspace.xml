@@ -25,20 +25,36 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7213b090-32c1-4ea9-9fa1-908acbfb0f1c" name="Default Changelist" comment="fx">
-      <change afterPath="$PROJECT_DIR$/src/test/java/enumsO/Browsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpersO/BrowserFabric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="7213b090-32c1-4ea9-9fa1-908acbfb0f1c" name="Default Changelist" comment="seleniumTests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/passenger/TicketPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpersO/GetScreenshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/listener/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/listener/RetryAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log52.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/JavaCore3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/JavaCore3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/JavaCore3.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LogInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +68,8 @@
         <option value="Interface" />
         <option value="Kotlin File" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="XHTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,11 +82,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cGzGKsYTiKd8Ptu1OoxNRxi4cC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -98,7 +118,7 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PlaylistTests.playlistTests_addSongToPlaylist_songAdded">
+  <component name="RunManager" selected="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml">
     <configuration name="LoginTest.loginTest_CorrectCredentials_LoggedToApp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
@@ -117,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTests.playlistTests_addSongToPlaylist_songAdded" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.ticketPriceForChild" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.PlaylistTests" />
-      <option name="METHOD_NAME" value="playlistTests_addSongToPlaylist_songAdded" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
+      <option name="METHOD_NAME" value="ticketPriceForChild" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,7 +155,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTests.playlistTests_createPlaylist_playlistCreated" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.ticketPriceForDifferentAgeGroups" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +164,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.PlaylistTests" />
-      <option name="METHOD_NAME" value="playlistTests_createPlaylist_playlistCreated" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
+      <option name="METHOD_NAME" value="ticketPriceForDifferentAgeGroups" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,7 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTests.playlistTests_renamePlaylist_playlistRenamed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.ticketPriceForInfant" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
@@ -162,8 +182,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.PlaylistTests" />
-      <option name="METHOD_NAME" value="playlistTests_renamePlaylist_playlistRenamed" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
+      <option name="METHOD_NAME" value="ticketPriceForInfant" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,23 +191,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" />
+      <item itemvalue="TestNG.LoginTest.ticketPriceForInfant" />
+      <item itemvalue="TestNG.LoginTest.ticketPriceForChild" />
+      <item itemvalue="TestNG.LoginTest.loginTest_CorrectCredentials_LoggedToApp" />
+      <item itemvalue="TestNG.LoginTest.ticketPriceForDifferentAgeGroups" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PlaylistTests.playlistTests_addSongToPlaylist_songAdded" />
         <item itemvalue="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" />
-        <item itemvalue="TestNG.PlaylistTests.playlistTests_createPlaylist_playlistCreated" />
-        <item itemvalue="TestNG.PlaylistTests.playlistTests_renamePlaylist_playlistRenamed" />
+        <item itemvalue="TestNG.LoginTest.ticketPriceForDifferentAgeGroups" />
         <item itemvalue="TestNG.LoginTest.loginTest_CorrectCredentials_LoggedToApp" />
+        <item itemvalue="TestNG.LoginTest.ticketPriceForChild" />
+        <item itemvalue="TestNG.LoginTest.ticketPriceForInfant" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593291107340</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="seleniumTests">
+      <created>1593637373035</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1593637373035</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,6 +500,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Homework7" />
     <MESSAGE value="lesson8_9" />
     <MESSAGE value="hw8" />
@@ -480,9 +524,18 @@
     <MESSAGE value="HWrenamePlaylist" />
     <MESSAGE value="Ideagitignore" />
     <MESSAGE value="fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="fx" />
+    <MESSAGE value="seleniumTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="seleniumTests" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="823" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593896761966">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="823" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1593896761966" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593711123367">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593711123367" />
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593187524499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -491,10 +544,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="784" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1593292756356" />
-    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1593140192810">
+    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1593893028217">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1593140192810" />
+    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1593893028217" />
     <state x="209" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591806193162">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -509,46 +562,46 @@
     <state x="327" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592190236340" />
     <state x="327" y="23" key="CommitChangelistDialog2/0.23.1440.795@0.23.1440.795" timestamp="1590178617799" />
     <state x="327" y="23" key="CommitChangelistDialog2/0.23.1440.798@0.23.1440.798" timestamp="1590284673118" />
-    <state width="1398" height="210" key="GridCell.Tab.0.bottom" timestamp="1593635880146">
+    <state width="668" height="210" key="GridCell.Tab.0.bottom" timestamp="1593896039744">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593635880146" />
+    <state width="668" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593896039744" />
     <state width="1358" height="190" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1590177748285" />
     <state width="1396" height="141" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1590284633589" />
-    <state width="1398" height="210" key="GridCell.Tab.0.center" timestamp="1593635880144">
+    <state width="668" height="210" key="GridCell.Tab.0.center" timestamp="1593896039742">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593635880144" />
+    <state width="668" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593896039742" />
     <state width="1358" height="190" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1590177748283" />
     <state width="1396" height="141" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1590284633588" />
-    <state width="1398" height="210" key="GridCell.Tab.0.left" timestamp="1593635880143">
+    <state width="668" height="210" key="GridCell.Tab.0.left" timestamp="1593896039741">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593635880143" />
+    <state width="668" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593896039741" />
     <state width="1358" height="190" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1590177748282" />
     <state width="1396" height="141" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1590284633587" />
-    <state width="1398" height="210" key="GridCell.Tab.0.right" timestamp="1593635880145">
+    <state width="668" height="210" key="GridCell.Tab.0.right" timestamp="1593896039743">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593635880145" />
+    <state width="668" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593896039743" />
     <state width="1358" height="190" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1590177748284" />
     <state width="1396" height="141" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1590284633588" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1593239527114">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1593824259123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593239527114" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1593239527113">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593824259123" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1593824259113">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593239527113" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1593239527113">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593824259113" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1593824259110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593239527113" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1593239527114">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593824259110" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1593824259121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593239527114" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593824259121" />
     <state x="616" y="200" key="IDE.errors.dialog" timestamp="1593294987413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -573,10 +626,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="276" y="294" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1440.900@0.0.1440.900" timestamp="1593289668369" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1593283000040">
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1593637375268">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593283000040" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593637375268" />
     <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.795@0.23.1440.795" timestamp="1590178619995" />
     <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.23.1440.798@0.23.1440.798" timestamp="1590284688403" />
     <state x="888" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590717678529">
@@ -606,9 +659,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="551" y="233" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1590939055295" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593633691269">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593808776735">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593633691269" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593808776735" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaCore3$_Users_olhaobertas_IdeaProjects_JavaCore3_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1593893883837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
