@@ -1,15 +1,16 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class LoginPage {
-    private WebDriver driver;
+
+public class LoginPage extends BasePage{
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public MainPage loginToApp(String email, String password){
@@ -20,21 +21,15 @@ public class LoginPage {
     }
 
     public boolean isError(){
-
-        //Place some logic
-        WebElement errorBorder = driver.findElement(By.xpath("//*[@data-v-e0457900][@class=\"error\"]"));
-        String rgbBorder = errorBorder.getCssValue("border-color");
-        System.out.println(rgbBorder);
-
-//         Assert.assertFalse((rgbBorder == "rgb(142, 73, 71)"),"THE BORDER IS RED");
-//         Assert.assertFalse(rgbBorder.isBlank());
-        if ((rgbBorder.equals("rgb(142, 73, 71)")))
-            return  true;
-
-        else
+        try {
+            driver.findElement(By.xpath("//*[@class='error']"));
+        } catch (NoSuchElementException error){
             return false;
+        }
+        return true;
     }
     public WebElement getEmail() {
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@type='email']")));
         return driver.findElement(By.xpath("//*[@type='email']"));
     }
 
