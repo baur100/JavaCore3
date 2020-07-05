@@ -40,10 +40,10 @@
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
+            <artifactId>log4j-api</artifactId>
             <version>2.13.3</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
@@ -52,8 +52,6 @@
             <artifactId>log4j-core</artifactId>
             <version>2.13.3</version>
         </dependency>
-
-
 
     </dependencies>
 

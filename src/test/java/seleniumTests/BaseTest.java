@@ -21,7 +21,7 @@ public class BaseTest {
     }
     @AfterMethod
     public void tearDown(ITestResult iTestResult) throws InterruptedException {
-        if (iTestResult.getStatus()==iTestResult.FAILURE){
+        if(iTestResult.getStatus()==iTestResult.FAILURE){
             GetScreenshot.capture(driver,iTestResult.getName());
         }
         driver.quit();
