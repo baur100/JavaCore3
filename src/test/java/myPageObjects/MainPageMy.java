@@ -50,11 +50,13 @@ public class MainPageMy extends BasePageMy {
     }
 
     public boolean checkPlaylist(String originalName) {
-        var list = driver.findElements(By.xpath("//*[@href=\"#!/playlist/"+originalName+"]"));
+//        WebElement sidePanel = driver.findElement(By.xpath("//*[@id=\"sidebar\"]"));
+//        ((JavascriptExecutor) driver)
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+originalName+"']"));
         return list.size()==1;
     }
     public boolean checkPlaylist(String originalName, String name) {
-        var list = driver.findElements(By.xpath("//*[@href=\"#!/playlist/"+originalName+"]"));
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+originalName+"']"));
         if (list.size()==0) {
             return false;
         }
@@ -64,14 +66,14 @@ public class MainPageMy extends BasePageMy {
 
     public void renamePlaylist(String playlistOriginalName, String summer2020) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        var playlist = driver.findElement(By.xpath("//*[@href=\"#!/playlist/"+playlistOriginalName+"]"));
+        var playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistOriginalName+"']"));
         js.executeScript("arguments[0].scrollIntoView();", playlist);
         Actions actions = new Actions(driver);
         actions.doubleClick(playlist).perform();
-        var editField = driver.findElement(By.xpath("//*[class='playlist playlist editing']/input"));
+        var editField = driver.findElement(By.xpath("//*[@class=\"playlist playlist editing\"]/input"));
         editField.sendKeys(Keys.CONTROL+"a");
+//        editField.sendKeys(Keys.CLEAR);
         editField.sendKeys(summer2020);
         editField.sendKeys(Keys.RETURN);
-
     }
 }

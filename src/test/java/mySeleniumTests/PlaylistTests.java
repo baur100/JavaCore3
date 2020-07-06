@@ -15,8 +15,5 @@ public class PlaylistTests extends BaseTest{
         String playlistOriginalName = mainPageMy.createPlaylist("Top2020");
         mainPageMy.renamePlaylist(playlistOriginalName,"summer2020");
         Assert.assertTrue(mainPageMy.checkPlaylist(playlistOriginalName, "summer2020"));
-
-
-
     }
 }
