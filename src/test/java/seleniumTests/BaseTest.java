@@ -7,15 +7,23 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     protected WebDriver driver;
+    @Parameters({"browser"})
     @BeforeMethod
-    public void startUp() throws NoSuchFieldException {
+    public void startUp(String browserName) throws NoSuchFieldException {
+        Browsers browser;
+        if(browserName.equals("CHROME")){
+            browser = Browsers.CHROME;
+        } else {
+            browser = Browsers.FIREFOX;
+        }
 
-        driver= BrowserFabric.getDriver(Browsers.CHROME);
+        driver= BrowserFabric.getDriver(browser);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://koelapp.testpro.io");
     }
