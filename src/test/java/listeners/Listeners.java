@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 public class Listeners implements ITestListener {
     @Override
     public void onTestStart(ITestResult iTestResult) {
-        System.out.println("Test started" + iTestResult.getName());
+        System.out.println("Test started " + iTestResult.getName());
     }
 
     @Override
@@ -17,7 +17,7 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-
+        System.out.println("HELP - Test failed " + iTestResult.getName());
     }
 
     @Override
