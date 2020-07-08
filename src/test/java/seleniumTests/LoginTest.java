@@ -10,7 +10,7 @@ import pageObjects.MainPage;
 import passenger.TicketPrice;
 
 public class LoginTest extends BaseTest {
-    @Parameters({"email","wrong-password"})
+    @Parameters({"email","password"})
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void loginTest_CorrectCredentials_LoggedToApp(String loginId,String pwd){
         LoginPage loginPage = new LoginPage(driver);
