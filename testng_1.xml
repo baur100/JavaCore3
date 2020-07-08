@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+<suite name="Master Suite"> <!--parallel="classes" thread-count="4"> -->
+    <listeners>
+        <listener class-name="listeners.Listeners"/>
+    </listeners>
+    <parameter name="email" value="testpro.user03@testpro.io"/>
+    <parameter name="password" value="te$t$tudent"/>
+    <parameter name="wrong-password" value="***-***"/>
     <test name="All tests">
         <classes>
             <class name="hw9_10_11.MyLoginTest">
@@ -14,11 +20,11 @@
             </class>
             <class name="hw9_10_11.MyLoginTestNew">
                 <methods>
-                    <include name="loginTest_CorrectCredentials_LoggedToApp" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp1" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp2" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp3" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp5" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp6" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp7" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp8" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp9" />
                 </methods>
             </class>
             <class name="hw9_10_11.MyPlayListTests">
@@ -31,10 +37,10 @@
             </class>
             <class name="hw9_10_11.MyPlayListTestsNew">
                 <methods>
-                    <include name="playlistTests_createPlaylist_PlaylistCreated" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed" />
-                    <include name="playlistTests_createPlaylist_PlaylistCreated1" />
-                    <include name="playlistTests_renamePlaylist_PlaylistRenamed1" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated2" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed2" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated3" />
+                    <include name="playlistTests_renamePlaylist_PlaylistRenamed3" />
                 </methods>
             </class>
         </classes>
