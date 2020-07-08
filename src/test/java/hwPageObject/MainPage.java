@@ -30,7 +30,7 @@ public class MainPage extends BasePage {
 
 
     public WebElement getNewPlaylistField(){
-        return driver.findElement(By.xpath("//*[@placeholder='↵ to save']"));
+        return driver.findElement(By.xpath("//*[contains(@placeholder,'to save')]"));
     }
 
     public String createPlaylist (String name){
