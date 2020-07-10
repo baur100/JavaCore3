@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
 //        mainPage = loginPage.loginToApp(username, password);
 //        Assert.assertTrue(mainPage.isMain());
 //    }
-    @Parameters({"email", "password"})
+    @Parameters({"email1", "password1"})
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void loginTestCorrectCredentialsLoggedToApp(String logIn, String pwd) {
         Assert.assertTrue(mainPage.isMain());

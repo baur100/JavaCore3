@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Master Suite]" parallel="classes">
+  <parameter name="email11" value="koeluser12222@testpro.io"/>
+  <parameter name="password" value="te$t$tudent"/>
+  <parameter name="password1" value="teststudent"/>
+  <parameter name="email" value="koeluser03@testpro.io"/>
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
   <test name="All tests(failed)" parallel="classes">
     <classes>
       <class name="SeleniumTests.LoginTestNew">
@@ -15,19 +22,19 @@
           <include name="startUp"/>
         </methods>
       </class> <!-- SeleniumTests.PlayListTestsNew -->
-      <class name="SeleniumTests.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="LoginToApp" invocation-numbers="2"/>
-          <include name="startUp"/>
-        </methods>
-      </class> <!-- SeleniumTests.LoginTest -->
       <class name="SeleniumTests.PlayListTests">
         <methods>
           <include name="tearDown"/>
           <include name="startUp"/>
         </methods>
       </class> <!-- SeleniumTests.PlayListTests -->
+      <class name="SeleniumTests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTestCorrectCredentialsLoggedToApp"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- SeleniumTests.LoginTest -->
     </classes>
   </test> <!-- All tests(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

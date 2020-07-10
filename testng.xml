@@ -4,9 +4,11 @@
     <listeners>
         <listener class-name="listeners.Listeners"/>
     </listeners>
-    <parameter name="email" value="koeluser21@testpro.io"/>
+    <parameter name="email" value="koeluser03@testpro.io"/>
     <parameter name ="password" value="te$t$tudent"/>
-    <parameter name ="wrong-password" value="teststudent"/>
+    <parameter name ="email1" value="koeluser12222@testpro.io"/>
+    <parameter name ="password1" value="teststudent"/>
+
     <test name="All tests">
         <classes>
             <class name="SeleniumTests.LoginTest">

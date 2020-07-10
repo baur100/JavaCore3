@@ -5,7 +5,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTestNew extends BaseTest {
-    @Parameters({"email", "password"})
+    @Parameters({"email1", "password1"})
     @Test
     public void loginTestCorrectCredentialsLoggedToApp5() {
         Assert.assertTrue(mainPage.isMain());

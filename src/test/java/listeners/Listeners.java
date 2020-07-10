@@ -12,12 +12,12 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-
+        System.out.println("Wow! = test is passed " + iTestResult.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        System.out.println("HELP - Test failed " + iTestResult.getName());
+        System.out.println("HELP - Test FAILED " + iTestResult.getName());
     }
 
     @Override
