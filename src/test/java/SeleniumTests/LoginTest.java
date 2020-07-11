@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.LoginPage;
 import passengerForDataProvider.TicketPrice;
 
 public class LoginTest extends BaseTest {
