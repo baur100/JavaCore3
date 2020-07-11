@@ -1,5 +1,8 @@
 package pageObjects;
 
+import SeleniumTests.BaseTest;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -11,7 +14,7 @@ import java.util.NoSuchElementException;
 
 
 public class MainPage extends BasePage {
-
+    private static Logger logger = LogManager.getLogger(MainPage.class);
     public MainPage(WebDriver driver) {
         super(driver);
     }
@@ -63,9 +66,13 @@ public class MainPage extends BasePage {
     }
 
     public String createPlayList(String playListName) throws InterruptedException {
+        logger.info("test started");
         clickPlusButton();
+        logger.info("plus button clicked");
         getPlayListNameTextField().sendKeys(playListName);
+        logger.trace("playlistName pasted");
         getPlayListNameTextField().sendKeys(Keys.ENTER);
+        logger.info("button clicked");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(MainPageSelectors.successPlaylistCreated)));
         String url = driver.getCurrentUrl();
         return url.split("/")[5];

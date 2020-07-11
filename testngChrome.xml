@@ -8,7 +8,8 @@
     <parameter name ="password" value="te$t$tudent"/>
     <parameter name ="email1" value="koeluser12222@testpro.io"/>
     <parameter name ="password1" value="teststudent"/>
-
+    <parameter name ="browser" value="CHROME"/>
+    <parameter name="url" value="https://koelapp.testpro.io"/>
     <test name="All tests">
         <classes>
             <class name="SeleniumTests.LoginTest">

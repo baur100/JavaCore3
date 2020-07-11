@@ -27,7 +27,7 @@ public class BrowserFabric {
     private static WebDriver getFirefoxDriver() {
         // set "headless' tests run
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         options.addArguments("--width=1400");
         options.addArguments("--height=1000");
         System.setProperty("webdriver.geko.driver", "geckodriver");

@@ -16,20 +16,29 @@ public class BaseTest {
     protected WebDriver driver;
     protected MainPage mainPage;
 
-    @Parameters({"email", "password"})
+    @Parameters({"email", "password", "browser", "url"})
+
     @BeforeMethod
-    public void startUp(String loginID, String pwd) throws NoSuchFieldException {
-        driver = BrowserFabric.getDriver(Browsers.CHROME);
-        driver.get("https://koelapp.testpro.io/");
+    public void startUp(String loginID, String pwd, String browserName, String url) throws NoSuchFieldException {
+
+        Browsers browser;
+        if (browserName.equals("CHROME")) {
+            browser = Browsers.CHROME;
+        } else {
+            browser = Browsers.FIREFOX;
+        }
+
+        driver = BrowserFabric.getDriver(browser);
+        driver.get(url);
         LoginPage loginPage = new LoginPage(driver);
         mainPage = loginPage.loginToApp(loginID, pwd);
     }
 
     @AfterMethod
     public void tearDown(ITestResult iTestResult) throws InterruptedException {
-        if(iTestResult.getStatus()==iTestResult.FAILURE){
+        if (iTestResult.getStatus() == iTestResult.FAILURE) {
             System.out.println("test failed: " + iTestResult.getName());
-            GetScreenshot.capture(driver,iTestResult.getName());
+            GetScreenshot.capture(driver, iTestResult.getName());
         }
         driver.quit();
     }
