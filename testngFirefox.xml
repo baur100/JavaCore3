@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+    <listeners>
+        <listener class-name="listeners.Listeners"/>
+    </listeners>
+    <parameter name="email" value="koeluser03@testpro.io"/>
+    <parameter name ="password" value="te$t$tudent"/>
+    <parameter name ="email1" value="koeluser12222@testpro.io"/>
+    <parameter name ="password1" value="teststudent"/>
+
+    <test name="All tests">
+        <classes>
+            <class name="SeleniumTests.LoginTest">
+                <methods>
+                    <include name="loginTestCorrectCredentialsLoggedToApp()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp1()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp2()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp3()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp4()" />
+                    <!--<include name="LoginToApp" />-->
+                </methods>
+            </class>
+            <class name="SeleniumTests.LoginTestNew">
+                <methods>
+                    <include name="loginTestCorrectCredentialsLoggedToApp5()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp6()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp7()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp8()" />
+                    <include name="loginTestCorrectCredentialsLoggedToApp9()" />
+                </methods>
+            </class>
+            <class name="SeleniumTests.PlayListTests">
+                <methods>
+                    <include name="createPlayList_PlayListCreated()" />
+                    <include name="createPlayList_PlayListCreated1()" />
+                    <include name="renamePlayList_PlayListCreated()" />
+                    <include name="renamePlayList_PlayListCreated1() "/>
+                </methods>
+            </class>
+            <class name="SeleniumTests.PlayListTestsNew">
+                <methods>
+                    <include name="createPlayList_PlayListCreated()" />
+                    <include name="createPlayList_PlayListCreated1()" />
+                    <include name="renamePlayList_PlayListCreated()" />
+                    <include name="renamePlayList_PlayListCreated1() "/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
