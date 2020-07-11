@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Master_Suite">
+              <span class="suite-name border-passed">Master Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Master_Suite">
+                    <span>testngChrome.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Master_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Master_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Master_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Master_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Master_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Master_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods passed suite-Master_Suite"> (hide)</a> <!-- hide-methods passed suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods passed suite-Master_Suite"> (show)</a> <!-- show-methods passed suite-Master_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Master_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTests" hash-for-method="createPlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)">createPlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTests" hash-for-method="createPlayList_PlayListCreated1(koeluser03@testpro.io, te$t$tudent)">createPlayList_PlayListCreated1(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTestsNew" hash-for-method="createPlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)">createPlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTestsNew" hash-for-method="createPlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)">createPlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTest" hash-for-method="loginTestCorrectCredentialsLoggedToApp(koeluser12222@testpro.io, teststudent)">loginTestCorrectCredentialsLoggedToApp(koeluser12222@testpro.io, teststudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTest" hash-for-method="loginTestCorrectCredentialsLoggedToApp1(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp1(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTest" hash-for-method="loginTestCorrectCredentialsLoggedToApp2(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp2(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTest" hash-for-method="loginTestCorrectCredentialsLoggedToApp3(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp3(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTest" hash-for-method="loginTestCorrectCredentialsLoggedToApp4(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp4(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTestNew" hash-for-method="loginTestCorrectCredentialsLoggedToApp5">loginTestCorrectCredentialsLoggedToApp5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTestNew" hash-for-method="loginTestCorrectCredentialsLoggedToApp6(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp6(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTestNew" hash-for-method="loginTestCorrectCredentialsLoggedToApp7(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp7(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTestNew" hash-for-method="loginTestCorrectCredentialsLoggedToApp8(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp8(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.LoginTestNew" hash-for-method="loginTestCorrectCredentialsLoggedToApp9(koeluser03@testpro.io, te$t$tudent)">loginTestCorrectCredentialsLoggedToApp9(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTests" hash-for-method="renamePlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)">renamePlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTestsNew" hash-for-method="renamePlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)">renamePlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Master_Suite" title="SeleniumTests.PlayListTestsNew" hash-for-method="renamePlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)">renamePlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Master_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Master_Suite" class="panel Master_Suite">
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTests.LoginTestNew</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp5">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp5 -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp6(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp6(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp6</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp7(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp7(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp7</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp8(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp8(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp8</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp9(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp9(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp9</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTests.PlayListTestsNew</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- createPlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">createPlayList_PlayListCreated2</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- createPlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">createPlayList_PlayListCreated3</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renamePlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- renamePlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">renamePlayList_PlayListCreated2</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renamePlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- renamePlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">renamePlayList_PlayListCreated3</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTests.PlayListTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- createPlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">createPlayList_PlayListCreated</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPlayList_PlayListCreated1(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- createPlayList_PlayListCreated1(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">createPlayList_PlayListCreated1</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="renamePlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- renamePlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">renamePlayList_PlayListCreated</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp(koeluser12222@testpro.io, teststudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp(koeluser12222@testpro.io, teststudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp</span>
+                  <span class="parameters">(koeluser12222@testpro.io, teststudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp1(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp1(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp1</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp2(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp2(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp2</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp3(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp3(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp3</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestCorrectCredentialsLoggedToApp4(koeluser03@testpro.io, te$t$tudent)">
+                  </a> <!-- loginTestCorrectCredentialsLoggedToApp4(koeluser03@testpro.io, te$t$tudent) -->
+                  <span class="method-name">loginTestCorrectCredentialsLoggedToApp4</span>
+                  <span class="parameters">(koeluser03@testpro.io, te$t$tudent)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+        </div> <!-- panel Master_Suite -->
+        <div panel-name="test-xml-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/anya/IdeaProjects/JavaCore3/testngChrome.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Master Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;te$t$tudent&quot;/&gt;
+  &lt;parameter name=&quot;email1&quot; value=&quot;koeluser12222@testpro.io&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+  &lt;parameter name=&quot;password1&quot; value=&quot;teststudent&quot;/&gt;
+  &lt;parameter name=&quot;email&quot; value=&quot;koeluser03@testpro.io&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://koelapp.testpro.io&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;All tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SeleniumTests.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp1()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp2()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp3()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp4()&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumTests.LoginTest --&gt;
+      &lt;class name=&quot;SeleniumTests.LoginTestNew&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp5()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp6()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp7()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp8()&quot;/&gt;
+          &lt;include name=&quot;loginTestCorrectCredentialsLoggedToApp9()&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumTests.LoginTestNew --&gt;
+      &lt;class name=&quot;SeleniumTests.PlayListTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createPlayList_PlayListCreated()&quot;/&gt;
+          &lt;include name=&quot;createPlayList_PlayListCreated1()&quot;/&gt;
+          &lt;include name=&quot;renamePlayList_PlayListCreated()&quot;/&gt;
+          &lt;include name=&quot;renamePlayList_PlayListCreated1() &quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumTests.PlayListTests --&gt;
+      &lt;class name=&quot;SeleniumTests.PlayListTestsNew&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createPlayList_PlayListCreated()&quot;/&gt;
+          &lt;include name=&quot;createPlayList_PlayListCreated1()&quot;/&gt;
+          &lt;include name=&quot;renamePlayList_PlayListCreated()&quot;/&gt;
+          &lt;include name=&quot;renamePlayList_PlayListCreated1() &quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- SeleniumTests.PlayListTestsNew --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- All tests --&gt;
+&lt;/suite&gt; &lt;!-- Master Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Master Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">All tests (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Master Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Master Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Master_Suite');
+function tableData_Master_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'renamePlayList_PlayListCreated')
+data.setCell(0, 2, 'SeleniumTests.PlayListTests')
+data.setCell(0, 3, 3140);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'renamePlayList_PlayListCreated2')
+data.setCell(1, 2, 'SeleniumTests.PlayListTestsNew')
+data.setCell(1, 3, 3132);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createPlayList_PlayListCreated3')
+data.setCell(2, 2, 'SeleniumTests.PlayListTestsNew')
+data.setCell(2, 3, 2973);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createPlayList_PlayListCreated')
+data.setCell(3, 2, 'SeleniumTests.PlayListTests')
+data.setCell(3, 3, 2934);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'renamePlayList_PlayListCreated3')
+data.setCell(4, 2, 'SeleniumTests.PlayListTestsNew')
+data.setCell(4, 3, 2929);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createPlayList_PlayListCreated2')
+data.setCell(5, 2, 'SeleniumTests.PlayListTestsNew')
+data.setCell(5, 3, 2925);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createPlayList_PlayListCreated1')
+data.setCell(6, 2, 'SeleniumTests.PlayListTests')
+data.setCell(6, 3, 2896);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTestCorrectCredentialsLoggedToApp7')
+data.setCell(7, 2, 'SeleniumTests.LoginTestNew')
+data.setCell(7, 3, 939);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginTestCorrectCredentialsLoggedToApp5')
+data.setCell(8, 2, 'SeleniumTests.LoginTestNew')
+data.setCell(8, 3, 934);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginTestCorrectCredentialsLoggedToApp')
+data.setCell(9, 2, 'SeleniumTests.LoginTest')
+data.setCell(9, 3, 928);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginTestCorrectCredentialsLoggedToApp2')
+data.setCell(10, 2, 'SeleniumTests.LoginTest')
+data.setCell(10, 3, 905);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginTestCorrectCredentialsLoggedToApp1')
+data.setCell(11, 2, 'SeleniumTests.LoginTest')
+data.setCell(11, 3, 747);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginTestCorrectCredentialsLoggedToApp6')
+data.setCell(12, 2, 'SeleniumTests.LoginTestNew')
+data.setCell(12, 3, 743);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginTestCorrectCredentialsLoggedToApp9')
+data.setCell(13, 2, 'SeleniumTests.LoginTestNew')
+data.setCell(13, 3, 706);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginTestCorrectCredentialsLoggedToApp4')
+data.setCell(14, 2, 'SeleniumTests.LoginTest')
+data.setCell(14, 3, 704);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginTestCorrectCredentialsLoggedToApp3')
+data.setCell(15, 2, 'SeleniumTests.LoginTest')
+data.setCell(15, 3, 672);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginTestCorrectCredentialsLoggedToApp8')
+data.setCell(16, 2, 'SeleniumTests.LoginTestNew')
+data.setCell(16, 3, 620);
+window.suiteTableData['Master_Suite']= { tableData: data, tableDiv: 'times-div-Master_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <div id="times-div-Master_Suite">
+              </div> <!-- times-div-Master_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Master Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">SeleniumTests.PlayListTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">renamePlayList_PlayListCreated1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">SeleniumTests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ticketPriceCalculator</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Master_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">2930 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp(koeluser12222@testpro.io, teststudent)</span>
+                <span class="method-start">2939 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp5</span>
+                <span class="method-start">2943 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">2976 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp status=SUCCESS method=LoginTest.loginTestCor...)</span>
+                <span class="method-start">3868 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp5 status=SUCCESS method=LoginTestNew.loginTes...)</span>
+                <span class="method-start">3878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">3946 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">3986 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createPlayList_PlayListCreated2 status=SUCCESS method=PlayListTestsNew.createPlayLi...)</span>
+                <span class="method-start">5855 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createPlayList_PlayListCreated status=SUCCESS method=PlayListTests.createPlayList_P...)</span>
+                <span class="method-start">5911 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">5922 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">5977 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp1(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">7182 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp6(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">7182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp6 status=SUCCESS method=LoginTestNew.loginTes...)</span>
+                <span class="method-start">7926 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp1 status=SUCCESS method=LoginTest.loginTestCo...)</span>
+                <span class="method-start">7929 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">7994 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">7997 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">9085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPlayList_PlayListCreated1(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">9109 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp2(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">10481 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp7(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">10524 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp2 status=SUCCESS method=LoginTest.loginTestCo...)</span>
+                <span class="method-start">11386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">11454 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp7 status=SUCCESS method=LoginTestNew.loginTes...)</span>
+                <span class="method-start">11463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">11529 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createPlayList_PlayListCreated1 status=SUCCESS method=PlayListTests.createPlayList_...)</span>
+                <span class="method-start">12005 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createPlayList_PlayListCreated3 status=SUCCESS method=PlayListTestsNew.createPlayLi...)</span>
+                <span class="method-start">12058 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">12071 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">12233 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp8(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">13849 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp3(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">14018 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">renamePlayList_PlayListCreated(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">14114 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">renamePlayList_PlayListCreated2(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">14183 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp8 status=SUCCESS method=LoginTestNew.loginTes...)</span>
+                <span class="method-start">14469 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">14697 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp3 status=SUCCESS method=LoginTest.loginTestCo...)</span>
+                <span class="method-start">14699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">14766 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp9(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">16958 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTestCorrectCredentialsLoggedToApp4(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">17129 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=renamePlayList_PlayListCreated status=SUCCESS method=PlayListTests.renamePlayList_P...)</span>
+                <span class="method-start">17255 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=renamePlayList_PlayListCreated2 status=SUCCESS method=PlayListTestsNew.renamePlayLi...)</span>
+                <span class="method-start">17315 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp(koeluser03@testpro.io, te$t$tudent, CHROME, https://koelapp.testpro.io)</span>
+                <span class="method-start">17380 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTestNew</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp9 status=SUCCESS method=LoginTestNew.loginTes...)</span>
+                <span class="method-start">17664 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginTestCorrectCredentialsLoggedToApp4 status=SUCCESS method=LoginTest.loginTestCo...)</span>
+                <span class="method-start">17834 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTests.PlayListTestsNew</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">renamePlayList_PlayListCreated3(koeluser03@testpro.io, te$t$tudent)</span>
+                <span class="method-start">19330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=renamePlayList_PlayListCreated3 status=SUCCESS method=PlayListTestsNew.renamePlayLi...)</span>
+                <span class="method-start">22259 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
