@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite1" parallel="classes" thread-count="4" verbose="1">
+    <test name="All Tests">
+        <classes>
+            <class name="_HWSelenium.seleniumTests.LoginTest">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_loggedToApp" />
+                    <include name="loginTest_CorrectCredentials_loggedToApp1" />
+                    <include name="loginTest_CorrectCredentials_loggedToApp2" />
+                </methods>
+            </class>
+            <class name="_HWSelenium.seleniumTests.LoginTestNew">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_loggedToApp" />
+                    <include name="loginTest_CorrectCredentials_loggedToApp1" />
+                    <include name="loginTest_CorrectCredentials_loggedToApp2" />
+                </methods>
+            </class>
+            <class name="_HWSelenium.seleniumTests.PlayListTests">
+                <methods>
+                    <include name="playlistTests_createPlaylist_PlaylistCreated()" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated2()" />
+                    <include name="playlistTests_renamePlayList_PlayListRenamed()" />
+                    <include name="playlistTests_renamePlayList_PlayListRenamed2()" />
+                </methods>
+            </class>
+            <class name="_HWSelenium.seleniumTests.PlayListTestsNew">
+                <methods>
+                    <include name="playlistTests_createPlaylist_PlaylistCreated()" />
+                    <include name="playlistTests_createPlaylist_PlaylistCreated2()" />
+                    <include name="playlistTests_renamePlayList_PlayListRenamed()" />
+                    <include name="playlistTests_renamePlayList_PlayListRenamed2()" />
+                </methods>
+            </class>
+         </classes>
+    </test>
+</suite>
+
