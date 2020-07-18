@@ -28,7 +28,7 @@ public class BrowserFabric {
         ChromeOptions options=new ChromeOptions();
         options.addArguments("window-size=1400,1000");
         options.addArguments("--headless");
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         return new ChromeDriver(options);
     }
 
@@ -36,7 +36,7 @@ public class BrowserFabric {
         OperaOptions options = new OperaOptions();
         options.addArguments("window-size=1400,1000");
         options.addArguments("--headless");
-        System.setProperty("webdriver.opera.driver", "operadriver.exe");
+        System.setProperty("webdriver.opera.driver", "operadriver");
         return new OperaDriver(options);
     }
 
@@ -45,7 +45,7 @@ public class BrowserFabric {
         options.addArguments("--headless");
         options.addArguments("--width=1400");
         options.addArguments("--height=1000");
-        System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "geckodriver");
         return new FirefoxDriver(options);
     }
 }

@@ -19,7 +19,7 @@ public class SimpleTest {
 
     @BeforeMethod
     public void startUp(){
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chromedriver", "chromedriver");
 //        ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--no-sandbox");
         driver = new ChromeDriver();
