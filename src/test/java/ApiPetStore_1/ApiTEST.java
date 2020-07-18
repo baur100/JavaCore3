@@ -1,9 +1,7 @@
 package ApiPetStore_1;
 
-import Models_1.GetPetResponce;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.testng.Assert;
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -13,7 +11,7 @@ public class ApiTEST {
     public void getPet(){
         Response response = given()
                 .baseUri("https://petstore.swagger.io/v2")
-                .basePath("/pet/678956997512126")
+                .basePath("/pet/999994978100692")
                 .when()
                 .get()
                 .then()
@@ -21,10 +19,8 @@ public class ApiTEST {
                 .extract()
                 .response();
 
-        JsonPath jsonPath = response.jsonPath();
-        GetPetResponce pet = jsonPath.getObject("$", GetPetResponce.class);
+        String res = response.getBody().print();
 
-
-        Assert.assertEquals(true, true);
+        Assert.assertTrue(res.contains("River"));
     }
 }
