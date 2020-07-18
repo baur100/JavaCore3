@@ -1,5 +1,6 @@
 package apiPetStore;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,6 +19,8 @@ public class ApiTest {
                 .statusCode(200)
                 .extract()
                 .response();
+
+        JsonPath jsonPath = response.jsonPath();
 
         String res = response.getBody().print();
 
