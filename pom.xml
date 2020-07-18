@@ -14,9 +14,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.6.1</version>
                 <configuration>
-                    <release>13</release>
-                    <source>13</source>
-                    <target>13</target>
+                    <release>12</release>
+                    <source>12</source>
+                    <target>12</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -30,7 +30,9 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -61,11 +63,14 @@
             <artifactId>log4j-core</artifactId>
             <version>2.13.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
-            <artifactId>json-path</artifactId>
+            <artifactId>rest-assured</artifactId>
             <version>4.3.1</version>
+            <scope>test</scope>
         </dependency>
+
 
     </dependencies>
 
