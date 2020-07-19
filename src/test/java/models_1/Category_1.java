@@ -1,4 +1,4 @@
-package Models_1;
+package models_1;
 
 public class Category_1 {
     private int id;
