@@ -7,6 +7,7 @@
     <parameter name="email" value="testpro.user03@testpro.io"/>
     <parameter name="password" value="te$t$tudent"/>
     <parameter name="wrong-password" value="********"/>
+    <parameter name="browser" value="CHROME"/>
     <test name="All tests">
         <classes>
             <class name="seleniumTests.LoginTest">
