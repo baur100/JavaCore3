@@ -1,13 +1,13 @@
 package models;
 
 public class GetPetResponse {
-    private int id;
+    private long id;
     private Category category;
     private String name;
     private String[] photoUrls;
     private Tag[] tags;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
