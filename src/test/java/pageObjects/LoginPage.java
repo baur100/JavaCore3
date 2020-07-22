@@ -4,9 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
@@ -22,8 +21,6 @@ public class LoginPage extends BasePage{
     }
 
     public boolean isError(){
-//        var errors = driver.findElements(By.xpath("//*[@class='error']"));
-//        return errors.size()==1;
         try {
             driver.findElement(By.xpath("//*[@class='error']"));
         } catch (NoSuchElementException error){
@@ -32,7 +29,7 @@ public class LoginPage extends BasePage{
         return true;
     }
     public WebElement getEmail() {
-        fluentWait.until(x->x.findElement(By.xpath("//*[@type='email']")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@type='email']")));
         return driver.findElement(By.xpath("//*[@type='email']"));
     }
 

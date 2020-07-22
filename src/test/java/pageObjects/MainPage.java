@@ -1,130 +1,71 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class MainPage extends BasePage {
-    private WebDriverWait wait;
-
+    private static Logger logger = LogManager.getLogger(MainPage.class);
     public MainPage(WebDriver driver) {
         super(driver);
-        this.wait = new WebDriverWait(driver, 5);
     }
-
     public boolean isMain() {
-        var list = driver.findElements(By.cssSelector("[class='fa fa-sign-out control']"));
-        return list.size() == 1;
+        var list =driver.findElements(By.cssSelector("[class='fa fa-sign-out control']"));
+        return list.size()==1;
     }
+    public void clickPlusButton() {
+        for (int i = 0; i < 50; i++){
+            try {
+                driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")).click();
+                return;
+            } catch (ElementClickInterceptedException ignored) {
 
-    public WebElement getPlusButton() {
-        fluentWait.until(x -> x.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")).isDisplayed());
-        return driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']"));
-    }
-
-    public WebElement summerHitsPlaylist() {
-        return driver.findElement(By.xpath("//*[@class='playlist playlist']/*[contains(text(), \"Summer Hits\")]"));
-    }
-
-    private void waitBeforeClick(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
-
-    public void waitForPage() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='fa fa-plus-circle control create']")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='youtube']")));
-    }
-
-    public WebElement getNewPlaylistField() {
-        return driver.findElement(By.xpath("//*[@placeholder='↵ to save']"));
-    }
-
-    public WebElement getPlayListButton(String playListID) {
-        return driver.findElement(By.xpath("//a[contains(@href,'" + playListID + "')]"));
-    }
-
-    public WebElement getPlayListField(String playListID) {
-        return driver.findElement(By.xpath("//a[contains(@href,'" + playListID + "')]/ancestor::li//input"));
-    }
-
-    public WebElement playListButton() {
-        return driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']"));
-    }
-
-
-    public WebElement playListNameField() {
-        return driver.findElement(By.xpath("//form[@class='create']/input[@type='text']"));
-    }
-
-    public void createPlaylist(String name) {
-        waitBeforeClick(playListButton());
-        playListButton().click();
-        playListNameField().sendKeys(name);
-        playListNameField().sendKeys(Keys.ENTER);
-    }
-
-    public boolean checkPlaylist(String name) {
-        boolean result = false;
-        if (summerHitsPlaylist().getText().equals(name)) {
-            result = true;
+            }
         }
-        return result;
+        throw new ElementClickInterceptedException("Element not reachable");
     }
 
-    public void clearPlayListField(String playListID) {
-        WebElement element = getPlayListField(playListID);
-        int length = element.getAttribute("value").length();
-        for (int i = 0; i <= length; i++) {
-            element.sendKeys(Keys.BACK_SPACE);
-        }
+
+    public WebElement getNewPlaylistField(){
+        return driver.findElement(By.xpath("//*[contains(@placeholder,'to save')]"));
     }
 
-    public void renamePlayList(String playListID, String title) {
-        WebElement element = getPlayListButton(playListID);
-        actions.doubleClick(element).perform();
-        WebElement playListField = getPlayListField(playListID);
-        clearPlayListField(playListID);
-        playListField.sendKeys(title + Keys.ENTER);
-    }
+    public String createPlaylist(String name){
+        logger.info("test started");
+        clickPlusButton();
+        logger.info("plus button clicked");
+        getNewPlaylistField().sendKeys(name);
+        logger.trace("name pasted");
+        getNewPlaylistField().sendKeys(Keys.RETURN);
+        logger.info("button clicked");
 
-    public String getPlayListTitle(String playListID) {
-        WebElement playListLink = getPlayListButton(playListID);
-        return playListLink.getText();
-    }
-
-    public String getPlayListIDFromURL() {
-        waitForUrlToUpdate(3);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='success show']")));
         String url = driver.getCurrentUrl();
         return url.split("/")[5];
     }
-
-    public void waitForUrlToUpdate(int seconds) {
-        String initialURL = driver.getCurrentUrl();
-        FluentWait<WebDriver> waitForUpdatedUrl = new FluentWait<WebDriver>(driver)
-                .withTimeout(Duration.ofSeconds(seconds))
-                .pollingEvery(Duration.ofMillis(500));
-        waitForUpdatedUrl.until(driver -> {
-            return !driver.getCurrentUrl().equals(initialURL);
-        });
+    public boolean checkPlaylist(String id){
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
+        return list.size()==1;
+    }
+    public boolean checkPlaylist(String id, String name){
+        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
+        if(list.size()==0){
+            return false;
+        };
+        return name.equals(list.get(0).getText());
     }
 
-    //    public String createPlaylist(String name){
-//        getPlusButton().click();
-//        getNewPlaylistField().sendKeys(name);
-//        getNewPlaylistField().sendKeys(Keys.RETURN);
-//        fluentWait.until(x->x.findElement(By.xpath("//div[@class='success show']")).isDisplayed());
-//        String url = driver.getCurrentUrl();
-//        return url.split("/")[5];
-//    }
-
-    //    public boolean checkPlaylist(String id){
-//        var list = driver.findElements(By.xpath("//*[@href='#!/playlist/"+id+"']"));
-//        return list.size()==1;
-//    }
+    public void renamePlaylist(String playlistId, String newName) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        var playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
+        js.executeScript("arguments[0].scrollIntoView();", playlist);
+        Actions actions = new Actions(driver);
+        actions.doubleClick(playlist).perform();
+        var editField = driver.findElement(By.xpath("//*[@class='playlist playlist editing']/input"));
+        editField.sendKeys(Keys.CONTROL+"a");
+        editField.sendKeys(newName);
+        editField.sendKeys(Keys.RETURN);
+    }
 }
