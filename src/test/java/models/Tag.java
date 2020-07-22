@@ -2,6 +2,7 @@ package models;
 
 public class Tag {
     private int id;
+    private String name;
 
     public int getId() {
         return id;
@@ -11,5 +12,5 @@ public class Tag {
         return name;
     }
 
-    private String name;
+
 }
