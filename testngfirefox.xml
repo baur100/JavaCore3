@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="classes" thread-count="4" verbose="1">
+
+  <listeners>
+      <listener class-name="listener.Listeners"></listener>
+  </listeners>
+   <parameter name="email" value="testpro.user03@testpro.io"></parameter>
+    <parameter name="password" value="te$t$tudent"></parameter>
+    <parameter name="browser" value="FIREFOX"/>
+    <test name="All tests">
+        <classes>
+           <class name="seleniumTests.LoginTest">
+               <methods>
+                   <include name="loginTest_CorrectCredentials_LoggedToApp" />
+                   <include name="loginTest_CorrectCredentials_LoggedToApp1" />
+                   <include name="loginTest_CorrectCredentials_LoggedToApp2" />
+                   <include name="loginTest_CorrectCredentials_LoggedToApp3" />
+                   <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                   <include name="ticketPriceForDifferentAgeGroups"/>
+               </methods>
+           </class>
+            <class name="seleniumTests.LoginTestNew">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_LoggedToApp5" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp6" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp7" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp8" />
+                    <include name="loginTest_CorrectCredentials_LoggedToApp9" />
+                </methods>
+            </class>
+            <class name="seleniumTests.PlaylistTests">
+                <methods>
+                    <include name="playlistTests_createPlaylist_playlistCreated" />
+                    <include name="playlistTests_renamePlaylist_playlistRenamed" />
+                    <include name="playlistTests_addSongToPlaylist_songAdded" />
+                    <include name="playlistTests_dragSongToPlaylist_songAdded"/>
+                    <include name="playlistTests_deletePlaylist_playlistDeleted"/>
+                </methods>
+            </class>
+            <class name="seleniumTests.PlaylistTestsNew">
+                <methods>
+                    <include name="playlistTests_createPlaylist_playlistCreated2" />
+                    <include name="playlistTests_renamePlaylist_playlistRenamed2" />
+                    <include name="playlistTests_createPlaylist_playlistCreated1" />
+                    <include name="playlistTests_renamePlaylist_playlistRenamed1" />
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

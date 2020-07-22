@@ -34,7 +34,9 @@ public class LogInPage extends BasePage{
         return new MainPage(driver);
     }
 
-    public WebElement getRedFrame(){ return driver.findElement(By.xpath("//*[@class=\"error\"]")); }
+    public WebElement getRedFrame(){
+            fluentWait.until(x->x.findElement(By.xpath("//*[@class=\"error\"]")));
+            return driver.findElement(By.xpath("//*[@class=\"error\"]")); }
 
     public boolean isError() {
         return getRedFrame().isDisplayed();

@@ -191,5 +191,28 @@ public class MainPage extends BasePage{
         return headerText.contains(newName);
     }
 
+    public void playButtonSongPlaying(){
+        fluentWait.until(x->x.findElement(By.xpath("//*[@class=\"play control\"]")));
+        var playControl = driver.findElement(By.xpath("//*[@class=\"play control\"]"));
+        playControl.click();
+    }
+
+    public boolean pauseControlDisplayed(){
+        fluentWait.until(x->x.findElement(By.xpath("//*[@class=\"pause control\"]")));
+        var pauseControl = driver.findElement(By.xpath("//*[@class=\"pause control\"]"));
+        return pauseControl.isDisplayed();
+    }
+
+    public void infoButtonClickable(){
+        fluentWait.until(x->x.findElement(By.xpath("//span[text()=\"Info\"]")));
+        var infoControl = driver.findElement(By.xpath("//span[text()=\"Info\"]"));
+        infoControl.click();
+    }
+
+    public boolean infoOpened(){
+        fluentWait.until(x->x.findElement(By.xpath("//a[text()=\"Lyrics\"]")));
+        var infoActive = driver.findElement(By.xpath("//a[text()=\"Lyrics\"]"));
+        return infoActive.isDisplayed();
+    }
 }
 

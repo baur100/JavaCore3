@@ -16,45 +16,36 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7213b090-32c1-4ea9-9fa1-908acbfb0f1c" name="Default Changelist" comment="seleniumTests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/passenger/TicketPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpersO/GetScreenshot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/listener/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/listener/RetryAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log52.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/JavaCore3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/JavaCore3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/JavaCore3.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" afterDir="false" />
+    <list default="true" id="1d39f1a6-2a88-464e-af4a-c4ccdafb25dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiPetStore/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpersO/ObjectCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpersO/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/GetPetResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/PostPetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/Tags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlayBarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/storeModels/GetStoreResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testngfirefox.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore3.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshotsplaylistTests_addSongToPlaylist_songAdded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshotsplaylistTests_createPlaylist_playlistCreated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshotsplaylistTests_createPlaylist_playlistCreated2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/LogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/LoginTestNew.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumTests/PlaylistTestsNew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngchrome.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Interface" />
-        <option value="Kotlin File" />
         <option value="Enum" />
-        <option value="XHTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -81,55 +68,54 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1cGzGKsYTiKd8Ptu1OoxNRxi4cC" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1eO4s2h95TM6cpfS2fpvPi61mKi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="FoodChain" />
-      <recent name="hw19" />
-      <recent name="hw18" />
-      <recent name="hw17" />
-      <recent name="hw16" />
+      <recent name="models" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="seleniumTests" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml">
-    <configuration name="LoginTest.loginTest_CorrectCredentials_LoggedToApp" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ApiTest">
+    <configuration name="ApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumTests.*" />
+          <option name="PATTERN" value="apiPetStore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
-      <option name="METHOD_NAME" value="loginTest_CorrectCredentials_LoggedToApp" />
+      <option name="PACKAGE_NAME" value="apiPetStore" />
+      <option name="MAIN_CLASS_NAME" value="apiPetStore.ApiTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.createPets" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaCore3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiPetStore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiPetStore" />
+      <option name="MAIN_CLASS_NAME" value="apiPetStore.ApiTest" />
+      <option name="METHOD_NAME" value="createPets" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,17 +123,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.ticketPriceForChild" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTest.getOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumTests.*" />
+          <option name="PATTERN" value="apiPetStore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
-      <option name="METHOD_NAME" value="ticketPriceForChild" />
+      <option name="PACKAGE_NAME" value="apiPetStore" />
+      <option name="MAIN_CLASS_NAME" value="apiPetStore.ApiTest" />
+      <option name="METHOD_NAME" value="getOrder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,17 +141,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.ticketPriceForDifferentAgeGroups" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTest.getOrdersByStatus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumTests.*" />
+          <option name="PATTERN" value="apiPetStore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
-      <option name="METHOD_NAME" value="ticketPriceForDifferentAgeGroups" />
+      <option name="PACKAGE_NAME" value="apiPetStore" />
+      <option name="MAIN_CLASS_NAME" value="apiPetStore.ApiTest" />
+      <option name="METHOD_NAME" value="getOrdersByStatus" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -173,17 +159,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.ticketPriceForInfant" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTest.updatePetName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JavaCore3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="seleniumTests.*" />
+          <option name="PATTERN" value="apiPetStore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="seleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTests.LoginTest" />
-      <option name="METHOD_NAME" value="ticketPriceForInfant" />
+      <option name="PACKAGE_NAME" value="apiPetStore" />
+      <option name="MAIN_CLASS_NAME" value="apiPetStore.ApiTest" />
+      <option name="METHOD_NAME" value="updatePetName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,39 +177,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
-      <module name="JavaCore3" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" />
-      <item itemvalue="TestNG.LoginTest.ticketPriceForInfant" />
-      <item itemvalue="TestNG.LoginTest.ticketPriceForChild" />
-      <item itemvalue="TestNG.LoginTest.loginTest_CorrectCredentials_LoggedToApp" />
-      <item itemvalue="TestNG.LoginTest.ticketPriceForDifferentAgeGroups" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/olhaobertas/IdeaProjects/JavaCore3/testng.xml" />
-        <item itemvalue="TestNG.LoginTest.ticketPriceForDifferentAgeGroups" />
-        <item itemvalue="TestNG.LoginTest.loginTest_CorrectCredentials_LoggedToApp" />
-        <item itemvalue="TestNG.LoginTest.ticketPriceForChild" />
-        <item itemvalue="TestNG.LoginTest.ticketPriceForInfant" />
+        <item itemvalue="TestNG.ApiTest" />
+        <item itemvalue="TestNG.ApiTest.updatePetName" />
+        <item itemvalue="TestNG.ApiTest.getOrdersByStatus" />
+        <item itemvalue="TestNG.ApiTest.createPets" />
+        <item itemvalue="TestNG.ApiTest.getOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -232,260 +192,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7213b090-32c1-4ea9-9fa1-908acbfb0f1c" name="Default Changelist" comment="" />
-      <created>1590169620459</created>
+      <changelist id="1d39f1a6-2a88-464e-af4a-c4ccdafb25dd" name="Default Changelist" comment="" />
+      <created>1594179508435</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1590169620459</updated>
-      <workItem from="1590169623599" duration="1784000" />
-      <workItem from="1590176711866" duration="1031000" />
-      <workItem from="1590178324364" duration="8151000" />
-      <workItem from="1590280262187" duration="15281000" />
-      <workItem from="1590606352865" duration="152000" />
-      <workItem from="1590717627619" duration="4775000" />
-      <workItem from="1590760895644" duration="6796000" />
-      <workItem from="1590868758232" duration="6650000" />
-      <workItem from="1590887508806" duration="12100000" />
-      <workItem from="1591147830869" duration="5831000" />
-      <workItem from="1591200929753" duration="13645000" />
-      <workItem from="1591473444863" duration="19612000" />
-      <workItem from="1591754410030" duration="15612000" />
-      <workItem from="1591989596528" duration="4548000" />
-      <workItem from="1592078457534" duration="493000" />
-      <workItem from="1592080306451" duration="5420000" />
-      <workItem from="1592104336798" duration="2532000" />
-      <workItem from="1592149937659" duration="8626000" />
-      <workItem from="1592347256621" duration="90000" />
+      <updated>1594179508435</updated>
     </task>
-    <task id="LOCAL-00001" summary="Homework7">
-      <created>1590178406647</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1590178406647</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Homework7">
-      <created>1590178617954</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1590178617954</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson8_9">
-      <created>1590271496368</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1590271496368</updated>
-    </task>
-    <task id="LOCAL-00004" summary="hw8">
-      <created>1590284673387</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1590284673387</updated>
-    </task>
-    <task id="LOCAL-00005" summary="les10">
-      <created>1590548954884</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1590548954884</updated>
-    </task>
-    <task id="LOCAL-00006" summary="HW10">
-      <created>1590601058714</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1590601058714</updated>
-    </task>
-    <task id="LOCAL-00007" summary="les11">
-      <created>1590722407743</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1590722407743</updated>
-    </task>
-    <task id="LOCAL-00008" summary="hw11">
-      <created>1590768532787</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1590768532787</updated>
-    </task>
-    <task id="LOCAL-00009" summary="hw12_13">
-      <created>1590945291782</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1590945291782</updated>
-    </task>
-    <task id="LOCAL-00010" summary="hw14">
-      <created>1591208160565</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1591208160565</updated>
-    </task>
-    <task id="LOCAL-00011" summary="hw15">
-      <created>1591410021551</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1591410021551</updated>
-    </task>
-    <task id="LOCAL-00012" summary="hw16">
-      <created>1591548343217</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1591548343217</updated>
-    </task>
-    <task id="LOCAL-00013" summary="hw17">
-      <created>1591554427274</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1591554427275</updated>
-    </task>
-    <task id="LOCAL-00014" summary="hw18">
-      <created>1591563438007</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1591563438007</updated>
-    </task>
-    <task id="LOCAL-00015" summary="les18">
-      <created>1591757692526</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1591757692526</updated>
-    </task>
-    <task id="LOCAL-00016" summary="hw19">
-      <created>1591808354352</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1591808354352</updated>
-    </task>
-    <task id="LOCAL-00017" summary="FoodChain">
-      <created>1591818064880</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1591818064880</updated>
-    </task>
-    <task id="LOCAL-00018" summary="SeleniumHW1">
-      <created>1592189889445</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1592189889445</updated>
-    </task>
-    <task id="LOCAL-00019" summary="hw19">
-      <created>1592190236570</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1592190236570</updated>
-    </task>
-    <task id="LOCAL-00020" summary="HWScrollDown">
-      <created>1592619020571</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1592619020571</updated>
-    </task>
-    <task id="LOCAL-00021" summary="HWScrollDown">
-      <created>1592704786839</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1592704786839</updated>
-    </task>
-    <task id="LOCAL-00022" summary="LogInTest">
-      <created>1592773475113</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1592773475113</updated>
-    </task>
-    <task id="LOCAL-00023" summary="HW">
-      <created>1593031722691</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1593031722691</updated>
-    </task>
-    <task id="LOCAL-00024" summary="HWrenamePlaylist">
-      <created>1593239242649</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1593239242649</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Ideagitignore">
-      <created>1593282142045</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282142045</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Ideagitignore">
-      <created>1593282210974</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282210974</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Ideagitignore">
-      <created>1593282638804</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282638804</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Ideagitignore">
-      <created>1593282676451</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282676451</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Ideagitignore">
-      <created>1593282813318</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282813319</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Ideagitignore">
-      <created>1593282996192</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1593282996192</updated>
-    </task>
-    <task id="LOCAL-00031" summary="fx">
-      <created>1593291107340</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1593291107340</updated>
-    </task>
-    <task id="LOCAL-00032" summary="seleniumTests">
-      <created>1593637373035</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1593637373035</updated>
-    </task>
-    <option name="localTasksCounter" value="33" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -499,172 +212,62 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Homework7" />
-    <MESSAGE value="lesson8_9" />
-    <MESSAGE value="hw8" />
-    <MESSAGE value="les10" />
-    <MESSAGE value="HW10" />
-    <MESSAGE value="les11" />
-    <MESSAGE value="hw11" />
-    <MESSAGE value="hw12_13" />
-    <MESSAGE value="hw14" />
-    <MESSAGE value="hw15" />
-    <MESSAGE value="hw16" />
-    <MESSAGE value="hw17" />
-    <MESSAGE value="hw18" />
-    <MESSAGE value="les18" />
-    <MESSAGE value="FoodChain" />
-    <MESSAGE value="SeleniumHW1" />
-    <MESSAGE value="hw19" />
-    <MESSAGE value="HWScrollDown" />
-    <MESSAGE value="LogInTest" />
-    <MESSAGE value="HW" />
-    <MESSAGE value="HWrenamePlaylist" />
-    <MESSAGE value="Ideagitignore" />
-    <MESSAGE value="fx" />
-    <MESSAGE value="seleniumTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="seleniumTests" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="823" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593896761966">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594931971218">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="823" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1593896761966" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593711123367">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1594931971218" />
+    <state x="444" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594233066869">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593711123367" />
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593187524499">
+    <state x="444" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1594233066869" />
+    <state x="898" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1595387809925">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1593187524499" />
-    <state x="784" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593292756356">
+    <state x="898" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1595387809925" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1594234148723">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="784" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1593292756356" />
-    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1593893028217">
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1594234148723" />
+    <state width="1398" height="283" key="GridCell.Tab.0.bottom" timestamp="1595447034533">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="879" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1593893028217" />
-    <state x="209" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591806193162">
+    <state width="1398" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595447034533" />
+    <state width="1398" height="283" key="GridCell.Tab.0.center" timestamp="1595447034530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="209" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1591806193162" />
-    <state x="458" y="204" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1591553244484">
+    <state width="1398" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595447034530" />
+    <state width="1398" height="283" key="GridCell.Tab.0.left" timestamp="1595447034528">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591553244484" />
-    <state x="327" y="0" key="CommitChangelistDialog2" timestamp="1592190236340">
+    <state width="1398" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595447034528" />
+    <state width="1398" height="283" key="GridCell.Tab.0.right" timestamp="1595447034532">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="327" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592190236340" />
-    <state x="327" y="23" key="CommitChangelistDialog2/0.23.1440.795@0.23.1440.795" timestamp="1590178617799" />
-    <state x="327" y="23" key="CommitChangelistDialog2/0.23.1440.798@0.23.1440.798" timestamp="1590284673118" />
-    <state width="668" height="210" key="GridCell.Tab.0.bottom" timestamp="1593896039744">
+    <state width="1398" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595447034532" />
+    <state width="668" height="304" key="GridCell.Tab.1.bottom" timestamp="1595388925513">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593896039744" />
-    <state width="1358" height="190" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1590177748285" />
-    <state width="1396" height="141" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1590284633589" />
-    <state width="668" height="210" key="GridCell.Tab.0.center" timestamp="1593896039742">
+    <state width="668" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595388925513" />
+    <state width="668" height="304" key="GridCell.Tab.1.center" timestamp="1595388925512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593896039742" />
-    <state width="1358" height="190" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1590177748283" />
-    <state width="1396" height="141" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1590284633588" />
-    <state width="668" height="210" key="GridCell.Tab.0.left" timestamp="1593896039741">
+    <state width="668" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1595388925512" />
+    <state width="668" height="304" key="GridCell.Tab.1.left" timestamp="1595388925511">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593896039741" />
-    <state width="1358" height="190" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1590177748282" />
-    <state width="1396" height="141" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1590284633587" />
-    <state width="668" height="210" key="GridCell.Tab.0.right" timestamp="1593896039743">
+    <state width="668" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1595388925511" />
+    <state width="668" height="304" key="GridCell.Tab.1.right" timestamp="1595388925512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593896039743" />
-    <state width="1358" height="190" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1590177748284" />
-    <state width="1396" height="141" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1590284633588" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1593824259123">
+    <state width="668" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595388925512" />
+    <state x="750" y="210" key="run.anything.popup" timestamp="1594953030980">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593824259123" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1593824259113">
+    <state x="750" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1594953030980" />
+    <state x="750" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1595105153338">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593824259113" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1593824259110">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593824259110" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1593824259121">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593824259121" />
-    <state x="616" y="200" key="IDE.errors.dialog" timestamp="1593294987413">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="616" y="200" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1593294987413" />
-    <state x="516" y="112" key="Maven.ArtifactSearchDialog" timestamp="1593291332186">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="516" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1593291332186" />
-    <state x="0" y="158" key="MergeDialog" timestamp="1593291136176">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="158" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593291136176" />
-    <state x="723" y="324" key="MultipleFileMergeDialog" timestamp="1593291137676">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="723" y="324" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593291137676" />
-    <state x="416" y="31" key="SettingsEditor" timestamp="1592006635592">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="416" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1592006635592" />
-    <state x="276" y="294" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1593289668369">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="276" y="294" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1440.900@0.0.1440.900" timestamp="1593289668369" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1593637375268">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593637375268" />
-    <state x="320" y="160" key="Vcs.Push.Dialog.v2/0.23.1440.795@0.23.1440.795" timestamp="1590178619995" />
-    <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.23.1440.798@0.23.1440.798" timestamp="1590284688403" />
-    <state x="888" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590717678529">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="888" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590717678529" />
-    <state x="792" y="82" width="586" height="735" key="find.popup" timestamp="1593290622079">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="792" y="82" width="586" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593290622079" />
-    <state x="497" y="218" key="git4idea.merge.GitMergeDialog" timestamp="1593291120560">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="497" y="218" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593291120560" />
-    <state x="497" y="216" key="git4idea.merge.GitMergeDialog/0.23.1440.795@0.23.1440.795" timestamp="1590175340549" />
-    <state x="497" y="217" key="git4idea.merge.GitMergeDialog/0.23.1440.801@0.23.1440.801" timestamp="1591989677244" />
-    <state x="433" y="218" key="git4idea.merge.GitPullDialog" timestamp="1592190243982">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="433" y="218" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1592190243982" />
-    <state x="433" y="216" key="git4idea.merge.GitPullDialog/0.23.1440.795@0.23.1440.795" timestamp="1590175035094" />
-    <state x="872" y="356" key="git4idea.ui.GitStashDialog" timestamp="1593290571487">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="872" y="356" key="git4idea.ui.GitStashDialog/0.0.1440.900@0.0.1440.900" timestamp="1593290571487" />
-    <state x="551" y="233" key="refactoring.ChangeSignatureDialog" timestamp="1590939055295">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="551" y="233" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1590939055295" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593808776735">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593808776735" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JavaCore3$_Users_olhaobertas_IdeaProjects_JavaCore3_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1593893883837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <state x="750" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1595105153338" />
   </component>
 </project>

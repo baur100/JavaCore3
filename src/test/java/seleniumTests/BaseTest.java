@@ -17,17 +17,21 @@ import pageObjects.MainPage;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected MainPage mainPage;
 
-    @Parameters({"email","password"})
 
+    @Parameters({"browser"})
     @BeforeMethod
-    public void startUp(String loginId,String pwd) throws NoSuchFieldException {
-        driver = BrowserFabric.getDriver(Browsers.CHROME);
+    public void startUp(String browserName) throws NoSuchFieldException {
+        Browsers browser;
+        if(browserName.equals("CHROME")){
+            browser = Browsers.CHROME;
+        } else {
+            browser = Browsers.FIREFOX;
+        }
+        driver = BrowserFabric.getDriver(browser);
         driver.get("https://koelapp.testpro.io");
         driver.manage().window().maximize();
-        LogInPage logInPage = new LogInPage(driver);
-        mainPage = logInPage.logInToApp(loginId,pwd); //"testpro.user03@testpro.io","te$t$tudent"
+
     }
     @AfterMethod
     public void tearDown(ITestResult iTestResult){

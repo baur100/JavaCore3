@@ -7,26 +7,16 @@
   </listeners>
    <parameter name="email" value="testpro.user03@testpro.io"></parameter>
     <parameter name="password" value="te$t$tudent"></parameter>
+    <parameter name="wrong-password" value="123456789"></parameter>
+    <parameter name="browser" value="CHROME"/>
     <test name="All tests">
         <classes>
            <class name="seleniumTests.LoginTest">
                <methods>
                    <include name="loginTest_CorrectCredentials_LoggedToApp" />
-                   <include name="loginTest_CorrectCredentials_LoggedToApp1" />
-                   <include name="loginTest_CorrectCredentials_LoggedToApp2" />
-                   <include name="loginTest_CorrectCredentials_LoggedToApp3" />
-                   <include name="loginTest_CorrectCredentials_LoggedToApp4" />
+                   <include name="loginTest_WrongCredentials_Error"/>
                    <include name="ticketPriceForDifferentAgeGroups"/>
                </methods>
-           </class>
-            <class name="seleniumTests.LoginTestNew">
-                <methods>
-                    <include name="loginTest_CorrectCredentials_LoggedToApp5" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp6" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp7" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp8" />
-                    <include name="loginTest_CorrectCredentials_LoggedToApp9" />
-                </methods>
             </class>
             <class name="seleniumTests.PlaylistTests">
                 <methods>
@@ -37,13 +27,10 @@
                     <include name="playlistTests_deletePlaylist_playlistDeleted"/>
                 </methods>
             </class>
-            <class name="seleniumTests.PlaylistTestsNew">
+            <class name="seleniumTests.PlayBarTest">
                 <methods>
-                    <include name="playlistTests_createPlaylist_playlistCreated2" />
-                    <include name="playlistTests_renamePlaylist_playlistRenamed2" />
-                    <include name="playlistTests_createPlaylist_playlistCreated1" />
-                    <include name="playlistTests_renamePlaylist_playlistRenamed1" />
-
+                    <include name="playBarTest_clickOnPlayButton_songIsPlaying" />
+                    <include name="playBarTest_InfoButtonWorking"/>
                 </methods>
             </class>
         </classes>
