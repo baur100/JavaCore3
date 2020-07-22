@@ -1,18 +1,18 @@
-package models_1;
+package models;
 
-public class GetPetResponse_1 {
-    private long id;
-    private Category_1 category_1;
+public class GetPetResponse {
+    private int id;
+    private Category category;
     private String name;
     private String[] photoUrls;
-    private Tag_1[] tags_1;
+    private Tag[] tags;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public Category_1 getCategory_1() {
-        return category_1;
+    public Category getCategory() {
+        return category;
     }
 
     public String getName() {
@@ -23,9 +23,9 @@ public class GetPetResponse_1 {
         return photoUrls;
     }
 
-    public Tag_1[] getTags_1(){
-            return tags_1;
-}
+    public Tag[] getTags() {
+        return tags;
+    }
 
     public String getStatus() {
         return status;

@@ -1,8 +1,7 @@
-package models_1;
+package models;
 
-public class Category_1 {
+public class Tag {
     private int id;
-    private String name;
 
     public int getId() {
         return id;
@@ -11,4 +10,6 @@ public class Category_1 {
     public String getName() {
         return name;
     }
+
+    private String name;
 }
