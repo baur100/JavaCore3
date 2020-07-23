@@ -1,9 +1,9 @@
-package apiPetStore;
+package MyApiPetStore;
 
+import My_models.My_Category;
+import My_models.My_GetPetResponse;
 import io.restassured.response.Response;
-import models.Category;
-import models.GetPetResponse;
-import org.testng.Assert;
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
@@ -11,15 +11,15 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiTest {
+public class MyApiTest_1 {
     @Test
     public void getPet(){
         Response response = given()
                 .baseUri("https://petstore.swagger.io/v2")
                 .basePath("/pet/100")
-        .when()
+                .when()
                 .get()
-        .then()
+                .then()
                 .statusCode(200)
                 .extract()
                 .response();
@@ -27,24 +27,27 @@ public class ApiTest {
         var jsonPath = response.jsonPath();
         System.out.println(jsonPath.prettify());
 
-        var status=jsonPath.getString("status");
+        var status = jsonPath.getString("status");
         System.out.println(status);
 
-        Category cat = jsonPath.getObject("category",Category.class);
-        Assert.assertEquals(cat.getId(),1);
-        Assert.assertEquals(cat.getName(),"cat");
+        My_Category cat = jsonPath.getObject("category", My_Category.class);
+        System.out.println(cat.getId());
 
-        GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
+        System.out.println(jsonPath);
 
-        Assert.assertEquals(pet.getStatus(),"sold");
-        Assert.assertEquals(pet.getName(),"Grumpy very Catty");
+        My_GetPetResponse pet = jsonPath.getObject("$", My_GetPetResponse.class);
+
+        Assert.assertEquals(pet.getStatus(), "available");
+        Assert.assertEquals(pet.getName(), "piper");
+
+
     }
     @Test
     public void getByStatus(){
         Response response = given()
                 .baseUri("https://petstore.swagger.io/v2")
                 .basePath("/pet/findByStatus")
-                .queryParam("status","sold")
+                .queryParam("status", "available")
                 .when()
                 .get()
                 .then()
@@ -52,9 +55,8 @@ public class ApiTest {
                 .extract()
                 .response();
         var jsonPath = response.jsonPath();
-        GetPetResponse[] arr = jsonPath.getObject("$",GetPetResponse[].class);
-        List<GetPetResponse> list = Arrays.asList(jsonPath.getObject("$",GetPetResponse[].class));
-//        System.out.println(list.size());
+        List<My_GetPetResponse> list = Arrays.asList(jsonPath.getObject("$", My_GetPetResponse[].class));
+        System.out.println(list.size());
         System.out.println(list.get(0).getName());
     }
 }

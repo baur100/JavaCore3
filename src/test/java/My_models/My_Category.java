@@ -1,7 +1,8 @@
-package models;
+package My_models;
 
-public class Tag {
+public class My_Category {
     private int id;
+    private String name;
 
     public int getId() {
         return id;
@@ -10,6 +11,4 @@ public class Tag {
     public String getName() {
         return name;
     }
-
-    private String name;
 }

@@ -1,4 +1,4 @@
-package ApiPetStore_1;
+package MyApiPetStore;
 
 import io.restassured.response.Response;
 import org.junit.Assert;
@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiTEST {
+public class MyApiTest {
     @Test
     public void getPet(){
         Response response = given()
                 .baseUri("https://petstore.swagger.io/v2")
-                .basePath("/pet/999994978100692")
+                .basePath("/pet/100")
                 .when()
                 .get()
                 .then()
@@ -21,6 +21,6 @@ public class ApiTEST {
 
         String res = response.getBody().print();
 
-        Assert.assertTrue(res.contains("River"));
+        Assert.assertTrue(res.contains("temporary test string"));
     }
 }
