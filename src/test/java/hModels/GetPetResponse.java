@@ -8,9 +8,7 @@ public class GetPetResponse {
     private Tag[] tags;
     private String status;
 
-    public long getId() {
-        return id;
-    }
+    public long getId() { return id; }
 
     public Category getCategory() {
         return category;
@@ -31,4 +29,5 @@ public class GetPetResponse {
     public String getStatus() {
         return status;
     }
+
 }

@@ -107,7 +107,6 @@ public class ApiTest {
         var jsonPath = response.jsonPath();
 
         GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
-        petId = pet.getId();
 
         Assert.assertEquals(pet.getStatus(),petRequest.getStatus());
         Assert.assertEquals(pet.getName(),newName);

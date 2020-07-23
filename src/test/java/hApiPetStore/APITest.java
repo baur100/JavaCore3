@@ -2,7 +2,10 @@ package hApiPetStore;
 
 import hModels.Category;
 import hModels.GetPetResponse;
+import helpers.TestData;
+import helpers.TestObjectCreator;
 import io.restassured.response.Response;
+import models.PostPetRequest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,8 +14,12 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+
+
 public class APITest {
-    @Test
+    private long petId;
+    private PostPetRequest petRequest;
+    @Test(enabled = false)
     public void getPet() {
         Response response = given()
             .baseUri("https://petstore.swagger.io/v2")
@@ -34,14 +41,12 @@ public class APITest {
         Assert.assertEquals(cat.getId(),1);
         Assert.assertEquals(cat.getName(),"cat");
 
-
         GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
 
         Assert.assertEquals(pet.getStatus(),"sold");
         Assert.assertEquals(pet.getName(),"Grumpy very Catty");
-
     }
-    @Test
+    @Test(enabled = false)
     public void getByStatus(){
         Response response = given()
             .baseUri("https://petstore.swagger.io/v2")
@@ -57,10 +62,51 @@ public class APITest {
         GetPetResponse[] arr = jsonPath.getObject("$",GetPetResponse[].class);
         List<GetPetResponse> list = Arrays.asList(jsonPath.getObject("$",GetPetResponse[].class));
         System.out.println(list.get(0).getName());
+    }
+    @Test(priority = 1)
+    public void createPate(){
+        petRequest = TestObjectCreator.createPostRetRequest();
+        Response response = given()
+          .baseUri("https://petstore.swagger.io/v2")
+            .basePath("/pet")
+            .header("Content-Type","application/json")
+            .body(petRequest)
+            .when()
+            .post()
+            .then()
+            .statusCode(200)
+            .extract()
+            .response();
+        var jsonPath = response.jsonPath();
 
+        GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
+        petId = pet.getId();
 
+        Assert.assertEquals(pet.getStatus(),petRequest.getStatus());
+        Assert.assertEquals(pet.getName(),petRequest.getName());
+        Assert.assertEquals(pet.getCategory().getName(),petRequest.getCategory().getName());
+        Assert.assertEquals(pet.getCategory().getId(),petRequest.getCategory().getId());
+        var headers = response.getHeaders();
+        System.out.println(headers.size());
+    }
+    public void updatePetName(){
+        String newName = TestData.randomString(12);
+        petRequest.setId(petId);
+        petRequest.setName(newName);
+        Response response = given()
+            .baseUri("https://petstore.swagger.io/v2")
+            .basePath("/pet")
+            .header("Content-Type","application/json")
+            .body(petRequest)
+            .when()
+            .post()
+            .then()
+            .statusCode(200)
+            .extract()
+            .response();
+        var jsonPath = response.jsonPath();
+
+        GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
 
     }
-    @Test
-    public void creatPate
 }

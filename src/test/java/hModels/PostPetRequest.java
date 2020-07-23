@@ -8,24 +8,24 @@ public class PostPetRequest {
     private Tag[] tags;
     private String status;
 
-    public PostPetRequest(long id, Category category, String name, String[] photoUrls, Tag[] tags, String status) {
+    public PostPetRequest(Category category, String name, String status) {
 
         this.category = category;
         this.name = name;
         this.status = status;
     }
 
-    public Category getCategory() {
-        return category;
-    }
+    public void setId(long id) { this.id = id; }
 
-    public String getName() {
-        return name;
-    }
+    public void setName(String name) { this.name = name; }
 
-    public String getStatus() {
-        return status;
-    }
+    public Category getCategory() { return category; }
+
+    public String getName() { return name; }
+
+    public String getStatus() { return status; }
+
+    public long getId() { return id; }
 }
 
 
