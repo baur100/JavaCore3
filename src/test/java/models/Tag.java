@@ -1,9 +1,10 @@
 package models;
 
 public class Tag {
-    private long id;
+    private int id;
+    private String name;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -11,5 +12,5 @@ public class Tag {
         return name;
     }
 
-    private String name;
+
 }
