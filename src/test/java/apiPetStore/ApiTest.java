@@ -114,4 +114,30 @@ public class ApiTest {
         Assert.assertEquals(pet.getCategory().getId(),petRequest.getCategory().getId());
         Assert.assertEquals(pet.getId(),petId);
     }
+    @Test(priority=3)
+    public void deletePetName(){
+        String newName = TestData.randomString(12);
+        petRequest.setId(petId);
+        petRequest.setName(newName);
+        Response response = given()
+                .baseUri("https://petstore.swagger.io/v2")
+                .basePath("/pet")
+                .header("Content-Type","application/json")
+                .body(petRequest)
+                .when()
+                .delete()
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
+        var jsonPath = response.jsonPath();
+
+        GetPetResponse pet = jsonPath.getObject("$",GetPetResponse.class);
+
+        Assert.assertEquals(pet.getStatus(),petRequest.getStatus());
+        Assert.assertEquals(pet.getName(),newName);
+        Assert.assertEquals(pet.getCategory().getName(),petRequest.getCategory().getName());
+        Assert.assertEquals(pet.getCategory().getId(),petRequest.getCategory().getId());
+        Assert.assertEquals(pet.getId(),petId);
+    }
 }
