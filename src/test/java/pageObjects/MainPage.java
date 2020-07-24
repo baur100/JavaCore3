@@ -4,8 +4,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 import javax.swing.*;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class MainPage extends BasePage {
+
 
     public static final String btSignOut = "//*[@class='fa fa-sign-out control']";
     public static final String btCreatePlayList = "//*[@class='fa fa-plus-circle control create']";
