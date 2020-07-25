@@ -2,6 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import javax.swing.*;
 import java.util.logging.LogManager;
@@ -24,13 +25,17 @@ public class MainPage extends BasePage {
         return list.size()==1;
     }
 
-    public void createPlaylist(String name) {
+    public String createPlaylist(String name) {
 //        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(btCreatePlayList)));
 //        fluentWait.until(x->x.findElement(By.xpath(btCreatePlayList)).isSelected());
         clickPlusButton();
         WebElement element = driver.findElement(By.xpath(fdEnterPlayListName));
         element.sendKeys(name);
         element.sendKeys(Keys.ENTER);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='success show']")));
+        String url = driver.getCurrentUrl();
+        return url.split("/")[5];
     }
 
     public boolean checkPlaylist(String name) {

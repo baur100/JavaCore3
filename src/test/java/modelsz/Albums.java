@@ -1,0 +1,7 @@
+package modelsz;
+
+public class Albums {
+    public int id;
+    public int artist_id;
+    public String name;
+}

@@ -3,6 +3,7 @@ package apiPetStr;
 import com.google.gson.Gson;
 import helpers.TestDataApi;
 import helpers.TestObjectCreattor;
+import helpers.Tokenz;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.path.json.JsonPath;
@@ -156,6 +157,7 @@ public class ApiTesttts {
         var jsonPath = response.jsonPath();
 
         DeleteResponse pet = jsonPath.getObject("$", DeleteResponse.class);
+        //Assert.assertEquals(pet.getMessage(), petId);
         Long deletedId = pet.getMessage();
         Long toDeleteId = petId;
         Assert.assertEquals(toDeleteId, deletedId);
@@ -179,4 +181,5 @@ public class ApiTesttts {
         ResponseBody body = response.getBody();
         body.prettyPrint();
     }
+
 }
