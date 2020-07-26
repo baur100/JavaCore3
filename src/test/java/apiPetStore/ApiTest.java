@@ -110,6 +110,7 @@ public void updatePetName(){
     Assert.assertEquals(pet.getId(),petId);
 }
 
+//Homework - delete a pet
 @Test(priority = 3)
 public void deletePet(){
     Response response = given()

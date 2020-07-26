@@ -43,6 +43,7 @@ public class MainPage extends BasePage{
         var js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();",myPlaylist);
         myPlaylist.click();
+        fluentWait.until(x->x.findElement(By.xpath("//*[contains(@class,'del btn')]")));
         var deleteButtonList = driver.findElements(By.xpath("//*[contains(@class,'del btn')]"));
         deleteButtonList.add(driver.findElement(By.xpath("//*[contains(@class,'del btn')]")));
         for (var v:deleteButtonList) {
