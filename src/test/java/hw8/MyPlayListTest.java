@@ -32,7 +32,7 @@ public class MyPlayListTest {
     public void playlistTests_createPlaylist_PlaylistCreated() {
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp("testpro.user03@testpro.io", "te$t$tudent");
-        String playlistId = mainPage.createPlaylist("Michael_JS");
+        String playlistId = mainPage.createPlaylist("MICHAEL_JS");
         Assert.assertTrue(mainPage.checkPlaylist(playlistId));
     }
 
@@ -40,7 +40,7 @@ public class MyPlayListTest {
     public void playlistTests_renamePlaylistRenamed(){
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp("testpro.user03@testpro.io", "te$t$tudent");
-        String playlistId = mainPage.createPlaylist("Michael_JS");
+        String playlistId = mainPage.createPlaylist("MICHAEL_JS");
         mainPage.renamePlaylist(playlistId, "MICHAEL_js");
     }
 }
