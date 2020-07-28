@@ -42,7 +42,7 @@ public class PlaylistXreationTest{
     public void createPlaylist() {
         LoginPage loginPage = new LoginPage(driver);
         MainPage mainPage = loginPage.loginToApp("testpro.user03@testpro.io", "te$t$tudent");
-        playlistId = mainPage.createPlaylist("xxxxx");
+        playlistId = mainPage.createPlaylist("MICHAEL_JS");
         Assert.assertTrue(mainPage.checkPlaylist(playlistId));
     }
 }
