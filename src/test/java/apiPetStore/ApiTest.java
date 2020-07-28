@@ -130,4 +130,26 @@ public class ApiTest {
         System.out.println(response.asString());
         Assert.assertEquals(statusCode, 200);
     }
+    @Test(priority=3)
+    public void deletePet(){
+        System.out.println(petId);
+        given()
+                .baseUri("https://petstore.swagger.io/v2")
+                .basePath("/pet/"+petId)
+                .when()
+                .delete()
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
+        given()
+                .baseUri("https://petstore.swagger.io/v2")
+                .basePath("/pet/"+petId)
+                .when()
+                .delete()
+                .then()
+                .statusCode(404)
+                .extract()
+                .response();
+    }
 }
