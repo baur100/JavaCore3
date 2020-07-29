@@ -6,7 +6,7 @@
     </listeners>
     <test name="All Tests">
         <classes>
-            <class name="seleniumTest.LoginTest">
+            <!--<class name="seleniumTest.LoginTest">
                 <methods>
                     <include name="loginTest_CorrectCredentials_LoggedToApp"/>
                     <include name="loginTest_CorrectCredentials_LoggedToApp1"/>
@@ -21,8 +21,8 @@
                     <include name="loginTest_CorrectCredentials_LoggedToApp2"/>
                     <include name="loginTest_CorrectCredentials_LoggedToApp3"/>
                 </methods>
-            </class>
-            <!--<class name="seleniumTest.PlayListTest">
+            </class>-->
+            <class name="seleniumTest.PlayListTest">
                 <methods>
                     <include name="playlistTests_createPlaylist_PlaylistCreated"/>
                     <include name="renamePlaylist_toTest"/>
@@ -30,7 +30,7 @@
                     <include name="renamePlaylist_toTest1"/>
                 </methods>
             </class>
-            <class name="seleniumTest.PlayListTestNew">
+            <!--<class name="seleniumTest.PlayListTestNew">
                 <methods>
                     <include name="playlistTests_createPlaylist_PlaylistCreated"/>
                     <include name="renamePlaylist_toTest"/>

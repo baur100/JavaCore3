@@ -1,4 +1,4 @@
-package apiPetStr;
+package apiTestsNG;
 
 import helpers.GetKoelData;
 import helpers.Tokenz;

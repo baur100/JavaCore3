@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import javax.swing.*;
 import java.util.logging.LogManager;
@@ -69,5 +70,15 @@ public class MainPage extends BasePage {
         editField.sendKeys(newName);
         editField.sendKeys(Keys.RETURN);
         Thread.sleep(3000);
+    }
+
+    public void deletePlayList(String playListToDelete) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        var playlist = driver.findElement(By.xpath("//*[@id='playlists']//*[contains(text(), '"+playListToDelete+"')]"));
+        js.executeScript("arguments[0].scrollIntoView();", playlist);
+        Actions action = new Actions(driver);
+        action.click(playlist).perform();
+        driver.findElement(By.xpath("//*[@title='Delete this playlist']")).click();
+        driver.navigate().refresh();
     }
 }

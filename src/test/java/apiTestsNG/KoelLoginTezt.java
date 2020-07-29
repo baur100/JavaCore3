@@ -1,4 +1,4 @@
-package apiPetStr;
+package apiTestsNG;
 
 import helpers.Tokenz;
 import org.testng.annotations.Test;

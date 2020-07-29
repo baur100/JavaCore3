@@ -1,12 +1,8 @@
-package apiPetStr;
+package apiTestsNG;
 
 import com.google.gson.Gson;
 import helpers.TestDataApi;
 import helpers.TestObjectCreattor;
-import helpers.Tokenz;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import modelsz.DeleteResponse;
@@ -15,7 +11,6 @@ import modelsz.PostPetRequests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
