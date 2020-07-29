@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +19,8 @@ public class BasePage {
         this.fluentWait = new FluentWait<WebDriver>(driver)
                 .withTimeout(Duration.ofSeconds(20))
                 .pollingEvery(Duration.ofMillis(100))
-                .ignoring(ElementClickInterceptedException.class);
+                .ignoring(ElementClickInterceptedException.class)
+                .ignoring(NoSuchElementException.class);
         this.wait=new WebDriverWait(this.driver,10);
     }
 }
