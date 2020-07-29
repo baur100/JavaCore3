@@ -58,7 +58,6 @@ public class PlaylistCreationApiDeleteSelenium {
         System.setProperty("webdriver.safari.noinstall", "true");
         driver = new SafariDriver();
         driver.get("https://koelapp.testpro.io");
-        driver.manage().window().maximize();
         LogInPage logInPage = new LogInPage(driver);
         mainPage = logInPage.logInToApp("testpro.user03@testpro.io","te$t$tudent"); //"testpro.user03@testpro.io","te$t$tudent"
         mainPage.deletePlaylist(playlistId);
